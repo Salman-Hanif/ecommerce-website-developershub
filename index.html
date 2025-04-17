@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
     <style>
       * {
@@ -18,7 +27,27 @@
         margin: 0;
         padding: 0;
       }
+      .swiper {
+      width: 100%;
+      height: 100%;
+    }
 
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
       .wrapper {
         margin-inline: auto;
       }
@@ -30,12 +59,12 @@
 
   <body>
     <div
-      class="wrapper w-[80%] flex flex-col gap-3 rounded-[5px] overflow-hidden"
+      class="wrapper bg-[#F7FAFC] w-[90%] flex flex-col gap-3 rounded-[5px] overflow-hidden"
     >
       <!--------------------------- Header Section  --------------------------->
       <header>
         <nav
-          class="w-full h-[86px] flex justify-center items-center gap-7 border-b-[2px] border-b-[#8b96a52d]"
+          class="w-full h-[86px] px-5 flex justify-center bg-white items-center gap-7 border-b-[2px] border-b-[#8b96a52d]"
         >
           <div class="w-[20%] h-[46px] flex items-center gap-1.5">
             <div
@@ -70,19 +99,19 @@
             <div
               class="w-[25%] h-[40px] flex flex-col justify-center items-center"
             >
-              <img src="/assets/Layout/Vector(1).svg" alt="" />
+              <img src="/assets/Icon/Vector.svg" alt="" />
               <a class="text-[#8B96A5] text-[12px]" href="">noth</a>
             </div>
             <div
               class="w-[25%] h-[40px] flex flex-col justify-center items-center"
             >
-              <img src="/assets/Layout/Vector.svg" alt="" />
+              <img src="/assets/Icon/message.svg" alt="" />
               <a class="text-[#8B96A5] text-[12px]" href="">noth</a>
             </div>
             <div
               class="w-[25%] h-[40px] flex flex-col justify-center items-center"
             >
-              <img src="/assets/Icon/control/Vector.svg" alt="" />
+              <img src="/assets/Icon/heart.svg" alt="" />
               <a class="text-[#8B96A5] text-[12px]" href="">noth</a>
             </div>
             <div
@@ -93,7 +122,9 @@
             </div>
           </div>
         </nav>
-        <div class="nav-two h-[50px] flex justify-center items-center">
+        <div
+          class="nav-two h-[50px] flex justify-center items-center bg-white px-5"
+        >
           <ul class="flex gap-6 w-[70%] h-full items-center">
             <li>All category</li>
             <li>Hot Offers</li>
@@ -109,7 +140,9 @@
         </div>
       </header>
       <!----------------------------------- Hero Secion --------------------------->
-      <div class="w-full h-[400px] flex gap-2.5 rounded-[5px] overflow-hidden">
+      <div
+        class="w-full h-[400px] flex gap-2.5 rounded-[5px] overflow-hidden bg-white"
+      >
         <div class="h-full w-[25%] text-[16px]">
           <ul class="hero-list flex flex-col justify-between h-full">
             <li class="font-bold w-full bg-[#E5F1FF] h-[25px] pl-2">
@@ -174,448 +207,836 @@
           </div>
         </div>
       </div>
-      <!------------------------------------ Deals Section ------------------------>
+      <!------------------------------------ Deals Section -------------------------------->
       <div
-        class="w-full h-[240px] grid grid-cols-7 border-[2px] border-[#8b96a52d] rounded-[5px] overflow-hidden"
+        class="w-full bg-white h-[240px] flex border-[2px] border-[#8b96a52d] rounded-[5px] overflow-hidden"
       >
+      <div class="h-full w-full md:w-[30%]">
         <div
-          class="w-full h-full col-span-2 border-r-[2px] border-r-[#8b96a52d] p-5"
-        >
-          <h3 class="text-[20px] font-semibold">Deals and Offers</h3>
-          <h5 class="text-[16px]">Hygiene equipments</h5>
-          <div class="w-full h-[50px] flex gap-1.5 items-center mt-3.5">
-            <div
-              class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
-            >
-              <a class="text-[16px] font-bold" href="">25</a>
-              <a class="text-[16px]" href="">Days</a>
-            </div>
-            <div
-              class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
-            >
-              <a class="text-[16px] font-bold" href="">25</a>
-              <a class="text-[16px]" href="">Days</a>
-            </div>
-            <div
-              class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
-            >
-              <a class="text-[16px] font-bold" href="">25</a>
-              <a class="text-[16px]" href="">Days</a>
-            </div>
-            <div
-              class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
-            >
-              <a class="text-[16px] font-bold" href="">25</a>
-              <a class="text-[16px]" href="">Days</a>
-            </div>
-          </div>
-        </div>
+        class="w-full gap-2.5  h-full col-span-2 border-r-[2px] border-r-[#8b96a52d] p-5 flex md:flex-col items-center md:items-start"
+      >
+      <div class=" w-[450px] md:w-auto">
 
-        <div
-          class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
-        >
-          <img src="/assets/Image/tech/8.png" alt="" srcset="" />
-          <a href="" class="text-[16px]">Smart Watches</a>
-          <button
-            class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
-          >
-            -25%
-          </button>
-        </div>
-        <div
-          class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
-        >
-          <img src="/assets/Image/tech/8.png" alt="" srcset="" />
-          <a href="" class="text-[16px]">Smart Watches</a>
-          <button
-            class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
-          >
-            -25%
-          </button>
-        </div>
-        <div
-          class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
-        >
-          <img src="/assets/Image/tech/8.png" alt="" srcset="" />
-          <a href="" class="text-[16px]">Smart Watches</a>
-          <button
-            class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
-          >
-            -25%
-          </button>
-        </div>
-        <div
-          class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
-        >
-          <img src="/assets/Image/tech/8.png" alt="" srcset="" />
-          <a href="" class="text-[16px]">Smart Watches</a>
-          <button
-            class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
-          >
-            -25%
-          </button>
-        </div>
-        <div
-          class="w-full h-full flex flex-col gap-2 justify-center items-center"
-        >
-          <img src="/assets/Image/tech/8.png" alt="" srcset="" />
-          <a href="" class="text-[16px]">Smart Watches</a>
-          <button
-            class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
-          >
-            -25%
-          </button>
-        </div>
+        <h3 class="text-[15px] md:text-[20px] font-semibold">Deals and Offers</h3>
+        <h5 class="text-[10px] md:text-[16px]">Hygiene equipments</h5>
       </div>
-
-      <!--------------------------------- second section ---------------->
-      <div
-        class="w-full h-[240px] grid grid-cols-6 border-[2px] border-[#8b96a52d] rounded-[5px] overflow-hidden"
-      >
-        <div
-          class="w-full h-full col-span-2 border-r-[2px] border-r-[#8b96a52d] relative"
-        >
-          <img
-            class="w-full h-full"
-            src="/assets/Banner-board-800x420 2.png"
-            alt=""
-            srcset=""
-          />
-
+        <div class="w-full h-[50px] flex gap-1.5 items-center mt-3.5">
           <div
-            class="h-full w-full absolute top-0 left-0 flex flex-col justify-start p-8"
+            class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
           >
-            <h3 class="text-[20px] font-semibold">
-              Home and <br />
-              Outdoor
-            </h3>
-            <button
-              class="bg-white w-[100px] h-[35px] text-[16px] font-medium rounded-[5px] mt-2.5"
-            >
-              Learn More
-            </button>
-          </div>
-        </div>
-
-        <div
-          class="w-full h-full border-r-[2px] border-r-[#8b96a52d] grid grid-rows-2"
-        >
-          <div class="w-full h-full relative pt-3 pl-2.5">
-            <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
-              <a class="text-[14px] text-[#8B96A5]" href=""
-                >from USD <br />
-                9</a
-              >
-            </div>
-            <img
-              class="absolute bottom-0 right-0"
-              src="/assets/Image/interior/5.png"
-              alt=""
-              srcset=""
-            />
+            <a class="text-[16px] font-bold" href="">25</a>
+            <a class="text-[16px]" href="">Days</a>
           </div>
           <div
-            class="w-full h-full relative pt-3 pl-2.5 border-t-[#8b96a52d] border-t-[2px]"
+            class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
           >
-            <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
-              <a class="text-[14px] text-[#8B96A5]" href=""
-                >from USD <br />
-                9</a
-              >
-            </div>
-            <img
-              class="absolute bottom-0 right-0"
-              src="/assets/Image/interior/5.png"
-              alt=""
-              srcset=""
-            />
-          </div>
-        </div>
-        <div
-          class="w-full h-full border-r-[2px] border-r-[#8b96a52d] grid grid-rows-2"
-        >
-          <div class="w-full h-full relative pt-3 pl-2.5">
-            <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
-              <a class="text-[14px] text-[#8B96A5]" href=""
-                >from USD <br />
-                9</a
-              >
-            </div>
-            <img
-              class="absolute bottom-0 right-0"
-              src="/assets/Image/interior/5.png"
-              alt=""
-              srcset=""
-            />
+            <a class="text-[16px] font-bold" href="">25</a>
+            <a class="text-[16px]" href="">Days</a>
           </div>
           <div
-            class="w-full h-full relative pt-3 pl-2.5 border-t-[#8b96a52d] border-t-[2px]"
+            class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
           >
-            <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
-              <a class="text-[14px] text-[#8B96A5]" href=""
-                >from USD <br />
-                9</a
-              >
-            </div>
-            <img
-              class="absolute bottom-0 right-0"
-              src="/assets/Image/interior/5.png"
-              alt=""
-              srcset=""
-            />
-          </div>
-        </div>
-        <div
-          class="w-full h-full border-r-[2px] border-r-[#8b96a52d] grid grid-rows-2"
-        >
-          <div class="w-full h-full relative pt-3 pl-2.5">
-            <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
-              <a class="text-[14px] text-[#8B96A5]" href=""
-                >from USD <br />
-                9</a
-              >
-            </div>
-            <img
-              class="absolute bottom-0 right-0"
-              src="/assets/Image/interior/5.png"
-              alt=""
-              srcset=""
-            />
+            <a class="text-[16px] font-bold" href="">25</a>
+            <a class="text-[16px]" href="">Days</a>
           </div>
           <div
-            class="w-full h-full relative pt-3 pl-2.5 border-t-[#8b96a52d] border-t-[2px]"
+            class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
           >
-            <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
-              <a class="text-[14px] text-[#8B96A5]" href=""
-                >from USD <br />
-                9</a
-              >
-            </div>
-            <img
-              class="absolute bottom-0 right-0"
-              src="/assets/Image/interior/5.png"
-              alt=""
-              srcset=""
-            />
-          </div>
-        </div>
-        <div class="w-full h-full grid grid-rows-2">
-          <div class="w-full h-full relative pt-3 pl-2.5">
-            <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
-              <a class="text-[14px] text-[#8B96A5]" href=""
-                >from USD <br />
-                9</a
-              >
-            </div>
-            <img
-              class="absolute bottom-0 right-0"
-              src="/assets/Image/interior/5.png"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div
-            class="w-full h-full relative pt-3 pl-2.5 border-t-[#8b96a52d] border-t-[2px]"
-          >
-            <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
-              <a class="text-[14px] text-[#8B96A5]" href=""
-                >from USD <br />
-                9</a
-              >
-            </div>
-            <img
-              class="absolute bottom-0 right-0"
-              src="/assets/Image/interior/5.png"
-              alt=""
-              srcset=""
-            />
+            <a class="text-[16px] font-bold" href="">25</a>
+            <a class="text-[16px]" href="">Days</a>
           </div>
         </div>
       </div>
-      <!----------------- section three ---------------------------------->
-      <div
-        class="w-full h-[240px] grid grid-cols-6 border-[2px] border-[#8b96a52d] rounded-[5px] overflow-hidden"
-      >
-        <div
-          class="w-full h-full col-span-2 border-r-[2px] border-r-[#8b96a52d] relative"
-        >
-          <img
-            class="w-full h-full"
-            src="/assets/Banner-board-800x420 2.png"
-            alt=""
-            srcset=""
-          />
-
-          <div
-            class="h-full w-full absolute top-0 left-0 flex flex-col justify-start p-8"
-          >
-            <h3 class="text-[20px] font-semibold">
-              Home and <br />
-              Outdoor
-            </h3>
-            <button
-              class="bg-white w-[100px] h-[35px] text-[16px] font-medium rounded-[5px] mt-2.5"
-            >
-              Learn More
-            </button>
-          </div>
-        </div>
-
-        <div
-          class="w-full h-full border-r-[2px] border-r-[#8b96a52d] grid grid-rows-2"
-        >
-          <div class="w-full h-full relative pt-3 pl-2.5">
-            <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
-              <a class="text-[14px] text-[#8B96A5]" href=""
-                >from USD <br />
-                9</a
-              >
-            </div>
-            <img
-              class="absolute bottom-0 right-0"
-              src="/assets/Image/interior/5.png"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div
-            class="w-full h-full relative pt-3 pl-2.5 border-t-[#8b96a52d] border-t-[2px]"
-          >
-            <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
-              <a class="text-[14px] text-[#8B96A5]" href=""
-                >from USD <br />
-                9</a
-              >
-            </div>
-            <img
-              class="absolute bottom-0 right-0"
-              src="/assets/Image/interior/5.png"
-              alt=""
-              srcset=""
-            />
-          </div>
-        </div>
-        <div
-          class="w-full h-full border-r-[2px] border-r-[#8b96a52d] grid grid-rows-2"
-        >
-          <div class="w-full h-full relative pt-3 pl-2.5">
-            <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
-              <a class="text-[14px] text-[#8B96A5]" href=""
-                >from USD <br />
-                9</a
-              >
-            </div>
-            <img
-              class="absolute bottom-0 right-0"
-              src="/assets/Image/interior/5.png"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div
-            class="w-full h-full relative pt-3 pl-2.5 border-t-[#8b96a52d] border-t-[2px]"
-          >
-            <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
-              <a class="text-[14px] text-[#8B96A5]" href=""
-                >from USD <br />
-                9</a
-              >
-            </div>
-            <img
-              class="absolute bottom-0 right-0"
-              src="/assets/Image/interior/5.png"
-              alt=""
-              srcset=""
-            />
-          </div>
-        </div>
-        <div
-          class="w-full h-full border-r-[2px] border-r-[#8b96a52d] grid grid-rows-2"
-        >
-          <div class="w-full h-full relative pt-3 pl-2.5">
-            <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
-              <a class="text-[14px] text-[#8B96A5]" href=""
-                >from USD <br />
-                9</a
-              >
-            </div>
-            <img
-              class="absolute bottom-0 right-0"
-              src="/assets/Image/interior/5.png"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div
-            class="w-full h-full relative pt-3 pl-2.5 border-t-[#8b96a52d] border-t-[2px]"
-          >
-            <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
-              <a class="text-[14px] text-[#8B96A5]" href=""
-                >from USD <br />
-                9</a
-              >
-            </div>
-            <img
-              class="absolute bottom-0 right-0"
-              src="/assets/Image/interior/5.png"
-              alt=""
-              srcset=""
-            />
-          </div>
-        </div>
-        <div class="w-full h-full grid grid-rows-2">
-          <div class="w-full h-full relative pt-3 pl-2.5">
-            <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
-              <a class="text-[14px] text-[#8B96A5]" href=""
-                >from USD <br />
-                9</a
-              >
-            </div>
-            <img
-              class="absolute bottom-0 right-0"
-              src="/assets/Image/interior/5.png"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div
-            class="w-full h-full relative pt-3 pl-2.5 border-t-[#8b96a52d] border-t-[2px]"
-          >
-            <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
-              <a class="text-[14px] text-[#8B96A5]" href=""
-                >from USD <br />
-                9</a
-              >
-            </div>
-            <img
-              class="absolute bottom-0 right-0"
-              src="/assets/Image/interior/5.png"
-              alt=""
-              srcset=""
-            />
-          </div>
-        </div>
       </div>
-      <!-- supply section -->
-       <div class="w-full h-[420px] bg-red-500 rounded-[5px] overflow-hidden">
-        <img class="w-full h-full" src="/assets/blue banner.png" alt="" srcset="">
-       </div>
+      <div class="h-full  w-[70%] gap-2 hidden md:flex">
+        <div
+        class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
+      >
+        <img src="/assets/tech/8.png" alt="" srcset="" />
+        <a href="" class="text-[16px]">Smart Watches</a>
+        <button
+        class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+        >
+        -25%
+        </button>
+      </div>
+      <div
+        class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
+      >
+        <img src="/assets/tech/7.png" alt="" srcset="" />
+        <a href="" class="text-[16px]">Laptops</a>
+        <button
+        class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+        >
+        -15%
+        </button>
+      </div>
+      <div
+        class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
+      >
+        <img src="/assets/tech/6.png" alt="" srcset="" />
+        <a href="" class="text-[16px]">GoPro Cameras</a>
+        <button
+          class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+        >
+          -40%
+        </button>
+      </div>
+      <div
+        class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
+      >
+        <img src="/assets/tech/5.png" alt="" srcset="" />
+        <a href="" class="text-[16px]">Headphones</a>
+        <button
+          class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+        >
+          -25%
+        </button>
+      </div>
+      <div
+        class="w-full h-full flex flex-col gap-2 justify-center items-center"
+      >
+      <img src="/assets/tech/3.png" alt="" srcset="" />
+        <a href="" class="text-[16px]">Canon Cameras</a>
+        <button
+        class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+        >
+          -25%
+        </button>
+      </div>
+      </div>
+
+       <div class="bg-red-600 md:hidden ">
+
+         <div class="swiper mySwiper">
+           <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+      </div>
+
+      <!--------------------------------- second section ----------------------------------->
+      <div
+        class="w-full bg-white h-[240px] grid grid-cols-6 border-[2px] border-[#8b96a52d] rounded-[5px] overflow-hidden"
+      >
+        <div
+          class="w-full h-full col-span-2 border-r-[2px] border-r-[#8b96a52d] relative"
+        >
+          <img
+            class="w-full h-full"
+            src="/assets/Banner-board-800x420 2.png"
+            alt=""
+            srcset=""
+          />
+
+          <div
+            class="h-full w-full absolute top-0 left-0 flex flex-col justify-start p-8"
+          >
+            <h3 class="text-[20px] font-semibold">
+              Home and <br />
+              Outdoor
+            </h3>
+            <button
+              class="bg-white w-[100px] h-[35px] text-[16px] font-medium rounded-[5px] mt-2.5"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="w-full h-full border-r-[2px] border-r-[#8b96a52d] grid grid-rows-2"
+        >
+          <div class="w-full h-full relative pt-3 pl-2.5">
+            <div class="h-10">
+              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <a class="text-[14px] text-[#8B96A5]" href=""
+                >from USD <br />
+                9</a
+              >
+            </div>
+            <img
+              class="absolute bottom-0 right-0"
+              src="/assets/interior/5.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="w-full h-full relative pt-3 pl-2.5 border-t-[#8b96a52d] border-t-[2px]"
+          >
+            <div class="h-10">
+              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <a class="text-[14px] text-[#8B96A5]" href=""
+                >from USD <br />
+                9</a
+              >
+            </div>
+            <img
+              class="absolute bottom-0 right-0"
+              src="/assets/interior/8.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+        <div
+          class="w-full h-full border-r-[2px] border-r-[#8b96a52d] grid grid-rows-2"
+        >
+          <div class="w-full h-full relative pt-3 pl-2.5">
+            <div class="h-10">
+              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <a class="text-[14px] text-[#8B96A5]" href=""
+                >from USD <br />
+                9</a
+              >
+            </div>
+            <img
+              class="absolute bottom-0 right-0"
+              src="/assets/interior/5.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="w-full h-full relative pt-3 pl-2.5 border-t-[#8b96a52d] border-t-[2px]"
+          >
+            <div class="h-10">
+              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <a class="text-[14px] text-[#8B96A5]" href=""
+                >from USD <br />
+                9</a
+              >
+            </div>
+            <img
+              class="absolute bottom-0 right-0"
+              src="/assets/interior/7.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+        <div
+          class="w-full h-full border-r-[2px] border-r-[#8b96a52d] grid grid-rows-2"
+        >
+          <div class="w-full h-full relative pt-3 pl-2.5">
+            <div class="h-10">
+              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <a class="text-[14px] text-[#8B96A5]" href=""
+                >from USD <br />
+                9</a
+              >
+            </div>
+            <img
+              class="absolute bottom-0 right-0"
+              src="/assets/Image/interior/5.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="w-full h-full relative pt-3 pl-2.5 border-t-[#8b96a52d] border-t-[2px]"
+          >
+            <div class="h-10">
+              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <a class="text-[14px] text-[#8B96A5]" href=""
+                >from USD <br />
+                9</a
+              >
+            </div>
+            <img
+              class="absolute bottom-0 right-0"
+              src="/assets/Image/interior/5.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+        <div class="w-full h-full grid grid-rows-2">
+          <div class="w-full h-full relative pt-3 pl-2.5">
+            <div class="h-10">
+              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <a class="text-[14px] text-[#8B96A5]" href=""
+                >from USD <br />
+                9</a
+              >
+            </div>
+            <img
+              class="absolute bottom-0 right-0"
+              src="/assets/Image/interior/5.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="w-full h-full relative pt-3 pl-2.5 border-t-[#8b96a52d] border-t-[2px]"
+          >
+            <div class="h-10">
+              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <a class="text-[14px] text-[#8B96A5]" href=""
+                >from USD <br />
+                9</a
+              >
+            </div>
+            <img
+              class="absolute bottom-0 right-0"
+              src="/assets/Image/interior/5.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-------------------------------------- section three ---------------------------------->
+      <div
+        class="w-full bg-white grid grid-cols-1 md:grid-cols-6 border-[2px] border-[#8b96a52d] rounded-[5px] overflow-hidden"
+      >
+        <div
+          class="w-full h-full col-span-2 border-r-[2px] border-r-[#8b96a52d] relative"
+        >
+          <img
+            class="w-full h-full"
+            src="/assets/Banner-board-800x420 2.png"
+            alt=""
+            srcset=""
+          />
+
+          <div
+            class="h-full w-full absolute top-0 left-0 flex flex-col justify-start p-8"
+          >
+            <h3 class="text-[20px] font-semibold">
+              Home and <br />
+              Outdoor
+            </h3>
+            <button
+              class="bg-white w-[100px] h-[35px] text-[16px] font-medium rounded-[5px] mt-2.5"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="w-full h-full border-r-[2px] border-r-[#8b96a52d] grid grid-rows-2"
+        >
+          <div class="w-full h-full relative pt-3 pl-2.5">
+            <div class="h-10">
+              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <a class="text-[14px] text-[#8B96A5]" href=""
+                >from USD <br />
+                9</a
+              >
+            </div>
+            <img
+              class="absolute bottom-0 right-0"
+              src="/assets/interior/5.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="w-full h-full relative pt-3 pl-2.5 border-t-[#8b96a52d] border-t-[2px]"
+          >
+            <div class="h-10">
+              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <a class="text-[14px] text-[#8B96A5]" href=""
+                >from USD <br />
+                9</a
+              >
+            </div>
+            <img
+              class="absolute bottom-0 right-0"
+              src="/assets/interior/8.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+
+
+
+        
+        <div
+          class="w-full h-full border-r-[2px] border-r-[#8b96a52d] grid grid-rows-2"
+        >
+          <div class="w-full h-full relative pt-3 pl-2.5">
+            <div class="h-10">
+              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <a class="text-[14px] text-[#8B96A5]" href=""
+                >from USD <br />
+                9</a
+              >
+            </div>
+            <img
+              class="absolute bottom-0 right-0"
+              src="/assets/interior/5.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="w-full h-full relative pt-3 pl-2.5 border-t-[#8b96a52d] border-t-[2px]"
+          >
+            <div class="h-10">
+              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <a class="text-[14px] text-[#8B96A5]" href=""
+                >from USD <br />
+                9</a
+              >
+            </div>
+            <img
+              class="absolute bottom-0 right-0"
+              src="/assets/interior/7.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+        <div
+          class="w-full h-full border-r-[2px] border-r-[#8b96a52d] grid grid-rows-2"
+        >
+          <div class="w-full h-full relative pt-3 pl-2.5">
+            <div class="h-10">
+              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <a class="text-[14px] text-[#8B96A5]" href=""
+                >from USD <br />
+                9</a
+              >
+            </div>
+            <img
+              class="absolute bottom-0 right-0"
+              src="/assets/Image/interior/5.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="w-full h-full relative pt-3 pl-2.5 border-t-[#8b96a52d] border-t-[2px]"
+          >
+            <div class="h-10">
+              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <a class="text-[14px] text-[#8B96A5]" href=""
+                >from USD <br />
+                9</a
+              >
+            </div>
+            <img
+              class="absolute bottom-0 right-0"
+              src="/assets/Image/interior/5.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+        <div class="w-full h-full grid grid-rows-2">
+          <div class="w-full h-full relative pt-3 pl-2.5">
+            <div class="h-10">
+              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <a class="text-[14px] text-[#8B96A5]" href=""
+                >from USD <br />
+                9</a
+              >
+            </div>
+            <img
+              class="absolute bottom-0 right-0"
+              src="/assets/Image/interior/5.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="w-full h-full relative pt-3 pl-2.5 border-t-[#8b96a52d] border-t-[2px]"
+          >
+            <div class="h-10">
+              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <a class="text-[14px] text-[#8B96A5]" href=""
+                >from USD <br />
+                9</a
+              >
+            </div>
+            <img
+              class="absolute bottom-0 right-0"
+              src="/assets/Image/interior/5.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-------------------------------- supply section --------------------------------->
+      <div
+        class="w-full rounded-[5px] h-[520px] md:h-auto overflow-hidden relative"
+      >
+        <img
+          class="object-cover h-full"
+          src="/assets/blue banner.png"
+          alt=""
+          srcset=""
+        />
+        <div class="w-full h-full absolute top-0 flex flex-col md:flex-row">
+          <div class="w-full md:h-full">
+            <div class="md: w-full pt-9 pl-7">
+              <div class="w-[85%] gap-4">
+                <h2 class="text-[32px] font-semibold leading-8 text-white">
+                  An Easy way to sent request to all Suppliers
+                </h2>
+                <h5 class="text-white text-[16px] leading-6">
+                  Lorem ipsum dolor sit amet cdita doloremque tempora? Non
+                  exercitationem dolore alias.
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-full p-7 pb-5">
+            <div class="w-full h-full bg-white mx-auto rounded-[4px] p-6">
+              <form class="flex flex-col justify-between h-full" action="">
+                <h3 class="font-semibold text-[20px]">
+                  Sent quotes to Supplier
+                </h3>
+                <h5 class="text-[16px]">What items you need</h5>
+                <input
+                  class="h-[60px] w-full border-2 border-[#8b96a52d] pl-3 rounded-[2px] placeholder:text-[16px] placeholder:text-[#8B96A5]"
+                  type="text"
+                  placeholder="Type more Details"
+                />
+                <div class="flex py-2.5 gap-2">
+                  <h5
+                    class="h-[40px] w-[55%] border-2 pl-1.5 flex items-center border-[#8b96a52d]"
+                  >
+                    Quantity
+                  </h5>
+                  <select
+                    class="border-2 border-[#8b96a52d] h-[40px] w-[35%]"
+                    name=""
+                    id=""
+                  >
+                    <option value="">Pieces</option>
+                  </select>
+                </div>
+                <button
+                  class="w-[130px] h-[40px] text-[16px] font-medium bg-[#127FFF] text-white rounded-[5px]"
+                >
+                  Send Inquiry
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------------- Recommendation Section ---------------------------->
+      <div class="w-full flex flex-col gap-2.5">
+        <h3 class="text-[24px] font-semibold">Recommendation</h3>
+        <div class="w-full h-full grid grid-cols-2 lg:grid-cols-5 gap-5">
+          <div
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+          >
+            <img src="/assets/cloth/3.png" alt="" srcset="" />
+            <div class="flex flex-col">
+              <a class="text-[16px] font-medium" href="">$30.30</a>
+              <a class="text-[12px] text-[#8B96A5]" href=""
+                >Tshirt with multiple color for men</a
+              >
+            </div>
+          </div>
+          <div
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+          >
+            <img src="/assets/cloth/3.png" alt="" srcset="" />
+            <div class="flex flex-col">
+              <a class="text-[16px] font-medium" href="">$30.30</a>
+              <a class="text-[12px] text-[#8B96A5]" href=""
+                >Tshirt with multiple color for men</a
+              >
+            </div>
+          </div>
+          <div
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+          >
+            <img src="/assets/cloth/3.png" alt="" srcset="" />
+            <div class="flex flex-col">
+              <a class="text-[16px] font-medium" href="">$30.30</a>
+              <a class="text-[12px] text-[#8B96A5]" href=""
+                >Tshirt with multiple color for men</a
+              >
+            </div>
+          </div>
+          <div
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+          >
+            <img src="/assets/cloth/3.png" alt="" srcset="" />
+            <div class="flex flex-col">
+              <a class="text-[16px] font-medium" href="">$30.30</a>
+              <a class="text-[12px] text-[#8B96A5]" href=""
+                >Tshirt with multiple color for men</a
+              >
+            </div>
+          </div>
+          <div
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+          >
+            <img src="/assets/cloth/3.png" alt="" srcset="" />
+            <div class="flex flex-col">
+              <a class="text-[16px] font-medium" href="">$30.30</a>
+              <a class="text-[12px] text-[#8B96A5]" href=""
+                >Tshirt with multiple color for men</a
+              >
+            </div>
+          </div>
+          <div
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+          >
+            <img src="/assets/cloth/3.png" alt="" srcset="" />
+            <div class="flex flex-col">
+              <a class="text-[16px] font-medium" href="">$30.30</a>
+              <a class="text-[12px] text-[#8B96A5]" href=""
+                >Tshirt with multiple color for men</a
+              >
+            </div>
+          </div>
+          <div
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+          >
+            <img src="/assets/cloth/3.png" alt="" srcset="" />
+            <div class="flex flex-col">
+              <a class="text-[16px] font-medium" href="">$30.30</a>
+              <a class="text-[12px] text-[#8B96A5]" href=""
+                >Tshirt with multiple color for men</a
+              >
+            </div>
+          </div>
+          <div
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+          >
+            <img src="/assets/cloth/3.png" alt="" srcset="" />
+            <div class="flex flex-col">
+              <a class="text-[16px] font-medium" href="">$30.30</a>
+              <a class="text-[12px] text-[#8B96A5]" href=""
+                >Tshirt with multiple color for men</a
+              >
+            </div>
+          </div>
+          <div
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+          >
+            <img src="/assets/cloth/3.png" alt="" srcset="" />
+            <div class="flex flex-col">
+              <a class="text-[16px] font-medium" href="">$30.30</a>
+              <a class="text-[12px] text-[#8B96A5]" href=""
+                >Tshirt with multiple color for men</a
+              >
+            </div>
+          </div>
+          <div
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+          >
+            <img src="/assets/cloth/3.png" alt="" srcset="" />
+            <div class="flex flex-col">
+              <a class="text-[16px] font-medium" href="">$30.30</a>
+              <a class="text-[12px] text-[#8B96A5]" href=""
+                >Tshirt with multiple color for men</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--------------------------------- Extra Services Section ------------------------>
+      <div class="w-full flex flex-col gap-2.5">
+        <h3 class="text-[24px] font-semibold">Our extra services</h3>
+        <div
+          class="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
+        >
+          <div
+            class="h-[150px] rounded-[5px] relative w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+          >
+            <img class="w-full h-[65%]" src="/assets/blue banner.png" alt="" />
+            <div class="w-[40%] h-[35%] pl-2.5 pt-2.5">
+              <p class="text-[12px] leading-4 font-medium" href="">
+                Sources from Industries Hub
+              </p>
+              <div
+                class="bg-[#D1E7FF] w-[40px] h-[40px] rounded-[50%] absolute right-[6%] top-[50%] flex justify-center items-center"
+              >
+                <img src="/assets/Icon/search.svg" alt="" srcset="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="h-[150px] rounded-[5px] relative w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+          >
+            <img class="w-full h-[65%]" src="/assets/blue banner.png" alt="" />
+            <div class="w-[40%] h-[35%] pl-2.5 pt-2.5">
+              <p class="text-[12px] leading-4 font-medium" href="">
+                Sources from Industries Hub
+              </p>
+              <div
+                class="bg-[#D1E7FF] w-[40px] h-[40px] rounded-[50%] absolute right-[6%] top-[50%] flex justify-center items-center"
+              >
+                <img src="/assets/Icon/search.svg" alt="" srcset="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="h-[150px] rounded-[5px] relative w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+          >
+            <img class="w-full h-[65%]" src="/assets/blue banner.png" alt="" />
+            <div class="w-[40%] h-[35%] pl-2.5 pt-2.5">
+              <p class="text-[12px] leading-4 font-medium" href="">
+                Sources from Industries Hub
+              </p>
+              <div
+                class="bg-[#D1E7FF] w-[40px] h-[40px] rounded-[50%] absolute right-[6%] top-[50%] flex justify-center items-center"
+              >
+                <img src="/assets/Icon/search.svg" alt="" srcset="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="h-[150px] rounded-[5px] relative w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+          >
+            <img class="w-full h-[65%]" src="/assets/blue banner.png" alt="" />
+            <div class="w-[40%] h-[35%] pl-2.5 pt-2.5">
+              <p class="text-[12px] leading-4 font-medium" href="">
+                Sources from Industries Hub
+              </p>
+              <div
+                class="bg-[#D1E7FF] w-[40px] h-[40px] rounded-[50%] absolute right-[6%] top-[50%] flex justify-center items-center"
+              >
+                <img src="/assets/Icon/search.svg" alt="" srcset="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--------------------------------- flags section ---------------------------------->
+      <div class="w-full flex flex-col gap-2.5">
+        <h3 class="text-[24px] font-semibold">Supplies by Region</h3>
+        <div
+          class="w-full h-full grid grid-cols-2 md:grid-cols-5 grid-rows-2 gap-5"
+        >
+          <div
+            class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
+          >
+            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <div>
+              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
+            </div>
+          </div>
+          <div
+            class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
+          >
+            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <div>
+              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
+            </div>
+          </div>
+          <div
+            class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
+          >
+            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <div>
+              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
+            </div>
+          </div>
+          <div
+            class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
+          >
+            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <div>
+              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
+            </div>
+          </div>
+          <div
+            class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
+          >
+            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <div>
+              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
+            </div>
+          </div>
+          <div
+            class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
+          >
+            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <div>
+              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
+            </div>
+          </div>
+          <div
+            class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
+          >
+            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <div>
+              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
+            </div>
+          </div>
+          <div
+            class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
+          >
+            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <div>
+              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
+            </div>
+          </div>
+          <div
+            class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
+          >
+            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <div>
+              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
+            </div>
+          </div>
+          <div
+            class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
+          >
+            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <div>
+              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   </body>
 </html>
