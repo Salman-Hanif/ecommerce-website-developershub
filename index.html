@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/output.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
     <link
       rel="stylesheet"
@@ -27,27 +27,6 @@
         margin: 0;
         padding: 0;
       }
-      .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  
       .wrapper {
         margin-inline: auto;
       }
@@ -64,7 +43,7 @@
       <!--------------------------- Header Section  --------------------------->
       <header>
         <nav
-          class="w-full h-[86px] px-5 flex justify-center bg-white items-center gap-7 border-b-[2px] border-b-[#8b96a52d]"
+          class="w-full md:h-[86px] h-[50px] py-8 px-5 flex md:justify-center justify-between bg-white items-center gap-7 border-b-[2px] border-b-[#8b96a52d]"
         >
           <div class="w-[20%] h-[46px] flex items-center gap-1.5">
             <div
@@ -76,7 +55,7 @@
               SALMAN
             </a>
           </div>
-          <div class="p-0 m-0 flex w-[65%]">
+          <div class="p-0 m-0 md:flex w-[65%] hidden ">
             <input
               type="text"
               placeholder="Search"
@@ -122,6 +101,19 @@
             </div>
           </div>
         </nav>
+        <div class="hidden-nav w-full h-[50px] md:hidden flex items-center">
+            <input
+              type="text"
+              placeholder="Search"
+              class="placeholder:pl-4 border-2 rounded-bl-[5px] rounded-tl-[5px] border-blue-600 flex-grow h-full"
+            />
+            
+            <button
+              class="w-[70px] h-full rounded-tr-[5px] text-white rounded-br-[5px] bg-blue-500"
+            >
+              Search
+            </button>
+        </div>
         <div
           class="nav-two h-[50px] flex justify-center items-center bg-white px-5"
         >
@@ -208,141 +200,136 @@
         </div>
       </div>
       <!------------------------------------ Deals Section -------------------------------->
-      <div
-        class="w-full bg-white h-[240px] flex border-[2px] border-[#8b96a52d] rounded-[5px] overflow-hidden"
-      >
-      <div class="h-full w-full md:w-[30%]">
-        <div
-        class="w-full gap-2.5  h-full col-span-2 border-r-[2px] border-r-[#8b96a52d] p-5 flex md:flex-col items-center md:items-start"
-      >
-      <div class=" w-[450px] md:w-auto">
+      <div class=" w-full flex flex-col md:flex-row">
+        <div class=" w-full md:w-[30%] bg-amber-400 md:h-[200px]">
 
-        <h3 class="text-[15px] md:text-[20px] font-semibold">Deals and Offers</h3>
-        <h5 class="text-[10px] md:text-[16px]">Hygiene equipments</h5>
-      </div>
-        <div class="w-full h-[50px] flex gap-1.5 items-center mt-3.5">
+
+
+
+
+
+
+
+
+          
+        <div class="w-full h-full">
           <div
-            class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
+            class="w-full gap-2.5 h-full col-span-2 border-r-[2px] border-r-[#8b96a52d] p-5 flex md:flex-col items-center md:items-start"
           >
-            <a class="text-[16px] font-bold" href="">25</a>
-            <a class="text-[16px]" href="">Days</a>
+            <div class="w-[450px] md:w-auto">
+              <h3 class="text-[15px] md:text-[20px] font-semibold">
+                Deals and Offers
+              </h3>
+              <h5 class="text-[10px] md:text-[16px]">Hygiene equipments</h5>
+            </div>
+            <div class="w-full h-[50px] flex gap-1.5 items-center mt-3.5">
+              <div
+                class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
+              >
+                <a class="text-[16px] font-bold" href="">25</a>
+                <a class="text-[16px]" href="">Days</a>
+              </div>
+              <div
+                class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
+              >
+                <a class="text-[16px] font-bold" href="">25</a>
+                <a class="text-[16px]" href="">Days</a>
+              </div>
+              <div
+                class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
+              >
+                <a class="text-[16px] font-bold" href="">25</a>
+                <a class="text-[16px]" href="">Days</a>
+              </div>
+              <div
+                class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
+              >
+                <a class="text-[16px] font-bold" href="">25</a>
+                <a class="text-[16px]" href="">Days</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        </div>
+        <div class=" w-full md:w-[70%] bg-red-600 h-[200px]">
+          <div class="h-full  w-full gap-2 hidden md:flex">
+            <div
+            class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
+          >
+            <img src="/assets/tech/8.png" alt="" srcset="" />
+            <a href="" class="text-[16px]">Smart Watches</a>
+            <button
+            class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+            >
+            -25%
+            </button>
           </div>
           <div
-            class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
+            class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
           >
-            <a class="text-[16px] font-bold" href="">25</a>
-            <a class="text-[16px]" href="">Days</a>
+            <img src="/assets/tech/7.png" alt="" srcset="" />
+            <a href="" class="text-[16px]">Laptops</a>
+            <button
+            class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+            >
+            -15%
+            </button>
           </div>
           <div
-            class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
+            class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
           >
-            <a class="text-[16px] font-bold" href="">25</a>
-            <a class="text-[16px]" href="">Days</a>
+            <img src="/assets/tech/6.png" alt="" srcset="" />
+            <a href="" class="text-[16px]">GoPro Cameras</a>
+            <button
+              class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+            >
+              -40%
+            </button>
           </div>
           <div
-            class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
+            class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
           >
-            <a class="text-[16px] font-bold" href="">25</a>
-            <a class="text-[16px]" href="">Days</a>
+            <img src="/assets/tech/5.png" alt="" srcset="" />
+            <a href="" class="text-[16px]">Headphones</a>
+            <button
+              class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+            >
+              -25%
+            </button>
+          </div>
+          <div
+            class="w-full h-full flex flex-col gap-2 justify-center items-center"
+          >
+          <img src="/assets/tech/3.png" alt="" srcset="" />
+            <a href="" class="text-[16px]">Canon Cameras</a>
+            <button
+            class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+            >
+              -25%
+            </button>
+          </div>
+          </div>
+    
+          <div class="h-full w-full bg-green-400 flex md:hidden">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </div>
-      </div>
-      <div class="h-full  w-[70%] gap-2 hidden md:flex">
-        <div
-        class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
-      >
-        <img src="/assets/tech/8.png" alt="" srcset="" />
-        <a href="" class="text-[16px]">Smart Watches</a>
-        <button
-        class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
-        >
-        -25%
-        </button>
-      </div>
-      <div
-        class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
-      >
-        <img src="/assets/tech/7.png" alt="" srcset="" />
-        <a href="" class="text-[16px]">Laptops</a>
-        <button
-        class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
-        >
-        -15%
-        </button>
-      </div>
-      <div
-        class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
-      >
-        <img src="/assets/tech/6.png" alt="" srcset="" />
-        <a href="" class="text-[16px]">GoPro Cameras</a>
-        <button
-          class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
-        >
-          -40%
-        </button>
-      </div>
-      <div
-        class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
-      >
-        <img src="/assets/tech/5.png" alt="" srcset="" />
-        <a href="" class="text-[16px]">Headphones</a>
-        <button
-          class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
-        >
-          -25%
-        </button>
-      </div>
-      <div
-        class="w-full h-full flex flex-col gap-2 justify-center items-center"
-      >
-      <img src="/assets/tech/3.png" alt="" srcset="" />
-        <a href="" class="text-[16px]">Canon Cameras</a>
-        <button
-        class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
-        >
-          -25%
-        </button>
-      </div>
-      </div>
-
-       <div class="bg-red-600 md:hidden ">
-
-         <div class="swiper mySwiper">
-           <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         
-      </div>
-
       <!--------------------------------- second section ----------------------------------->
       <div
         class="w-full bg-white h-[240px] grid grid-cols-6 border-[2px] border-[#8b96a52d] rounded-[5px] overflow-hidden"
@@ -581,9 +568,6 @@
           </div>
         </div>
 
-
-
-        
         <div
           class="w-full h-full border-r-[2px] border-r-[#8b96a52d] grid grid-rows-2"
         >
@@ -751,7 +735,6 @@
           </div>
         </div>
       </div>
-
       <!------------------------------- Recommendation Section ---------------------------->
       <div class="w-full flex flex-col gap-2.5">
         <h3 class="text-[24px] font-semibold">Recommendation</h3>
@@ -1036,7 +1019,5 @@
       </div>
     </div>
     <script src="/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   </body>
 </html>
