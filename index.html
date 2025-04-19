@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/output.css" />
 
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -49,13 +48,13 @@
             <div
               class="bg-[#0D6EFD] w-[38px] h-[40px] rounded-[7px] flex justify-center items-center"
             >
-              <img src="/assets/Group 2.png" alt="" srcset="" />
+              <img src="/assets/Icon/heart.svg" alt="" srcset="" />
             </div>
             <a href="" class="text-[#8CB7F5] font-extrabold text-[17px]">
               SALMAN
             </a>
           </div>
-          <div class="p-0 m-0 md:flex w-[65%] hidden ">
+          <div class="p-0 m-0 md:flex w-[65%] hidden">
             <input
               type="text"
               placeholder="Search"
@@ -78,41 +77,41 @@
             <div
               class="w-[25%] h-[40px] flex flex-col justify-center items-center"
             >
-              <img src="/assets/Icon/Vector.svg" alt="" />
-              <a class="text-[#8B96A5] text-[12px]" href="">noth</a>
+              <img src="/assets/Icon/security.svg" alt="" />
+              <a class="text-[#8B96A5] text-[12px]" href="">profile</a>
             </div>
             <div
               class="w-[25%] h-[40px] flex flex-col justify-center items-center"
             >
               <img src="/assets/Icon/message.svg" alt="" />
-              <a class="text-[#8B96A5] text-[12px]" href="">noth</a>
+              <a class="text-[#8B96A5] text-[12px]" href="">message</a>
             </div>
             <div
               class="w-[25%] h-[40px] flex flex-col justify-center items-center"
             >
               <img src="/assets/Icon/heart.svg" alt="" />
-              <a class="text-[#8B96A5] text-[12px]" href="">noth</a>
+              <a class="text-[#8B96A5] text-[12px]" href="">orders</a>
             </div>
             <div
               class="w-[25%] h-[40px] flex flex-col justify-center items-center"
             >
-              <img src="/assets/Group 2.png" alt="" />
-              <a class="text-[#8B96A5] text-[12px]" href="">noth</a>
+              <img src="/assets/Icon/search.svg" alt="" />
+              <a class="text-[#8B96A5] text-[12px]" href="">cart</a>
             </div>
           </div>
         </nav>
         <div class="hidden-nav w-full h-[50px] md:hidden flex items-center">
-            <input
-              type="text"
-              placeholder="Search"
-              class="placeholder:pl-4 border-2 rounded-bl-[5px] rounded-tl-[5px] border-blue-600 flex-grow h-full"
-            />
-            
-            <button
-              class="w-[70px] h-full rounded-tr-[5px] text-white rounded-br-[5px] bg-blue-500"
-            >
-              Search
-            </button>
+          <input
+            type="text"
+            placeholder="Search"
+            class="placeholder:pl-4 border-2 rounded-bl-[5px] rounded-tl-[5px] border-blue-600 flex-grow h-full"
+          />
+
+          <button
+            class="w-[70px] h-full rounded-tr-[5px] text-white rounded-br-[5px] bg-blue-500"
+          >
+            Search
+          </button>
         </div>
         <div
           class="nav-two h-[50px] flex justify-center items-center bg-white px-5"
@@ -135,7 +134,7 @@
       <div
         class="w-full h-[400px] flex gap-2.5 rounded-[5px] overflow-hidden bg-white"
       >
-        <div class="h-full w-[25%] text-[16px]">
+        <div class="h-full w-[25%] text-[16px] hidden md:block>
           <ul class="hero-list flex flex-col justify-between h-full">
             <li class="font-bold w-full bg-[#E5F1FF] h-[25px] pl-2">
               Automobiles
@@ -149,7 +148,7 @@
             <li class="w-full h-[25px] pl-2">More category</li>
           </ul>
         </div>
-        <div class="h-full w-[65%] bg-blue-500 relative">
+        <div class="h-full w-full md:w-[65%] bg-blue-500 relative">
           <img
             class="h-full w-full relative"
             src="/assets/Banner-board-800x420 2.png"
@@ -157,10 +156,10 @@
             srcset=""
           />
           <div
-            class="h-full w-full absolute top-0 left-0 flex flex-col justify-start pt-14 pl-15"
+            class="h-full w-full absolute top-0 left-0 flex flex-col justify-start pt-14 pl-3 md:pl-15"
           >
-            <h3 class="text-[28px]">Letest Tranding</h3>
-            <h3 class="text-[32px] font-bold">Electronic Items</h3>
+            <h3 class="md:text-[28px] text-[20px]">Letest Tranding</h3>
+            <h3 class="md:text-[32px] text-[25px] font-bold">Electronic Items</h3>
             <button
               class="bg-white w-[100px] h-[35px] text-[16px] font-medium rounded-[5px]"
             >
@@ -168,7 +167,7 @@
             </button>
           </div>
         </div>
-        <div class="h-full w-[20%] flex flex-col gap-1.5 p-1.5">
+        <div class="h-full w-[20%] hidden md:flex-col gap-1.5 p-1.5">
           <div
             class="h-[40%] bg-[#E3F0FF] w-full rounded-[5px] gap-1 flex flex-col p-0.5"
           >
@@ -200,118 +199,106 @@
         </div>
       </div>
       <!------------------------------------ Deals Section -------------------------------->
-      <div class=" w-full flex flex-col md:flex-row">
-        <div class=" w-full md:w-[30%] bg-amber-400 md:h-[200px]">
-
-
-
-
-
-
-
-
-
-          
-        <div class="w-full h-full">
-          <div
-            class="w-full gap-2.5 h-full col-span-2 border-r-[2px] border-r-[#8b96a52d] p-5 flex md:flex-col items-center md:items-start"
-          >
-            <div class="w-[450px] md:w-auto">
-              <h3 class="text-[15px] md:text-[20px] font-semibold">
-                Deals and Offers
-              </h3>
-              <h5 class="text-[10px] md:text-[16px]">Hygiene equipments</h5>
-            </div>
-            <div class="w-full h-[50px] flex gap-1.5 items-center mt-3.5">
-              <div
-                class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
-              >
-                <a class="text-[16px] font-bold" href="">25</a>
-                <a class="text-[16px]" href="">Days</a>
-              </div>
-              <div
-                class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
-              >
-                <a class="text-[16px] font-bold" href="">25</a>
-                <a class="text-[16px]" href="">Days</a>
-              </div>
-              <div
-                class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
-              >
-                <a class="text-[16px] font-bold" href="">25</a>
-                <a class="text-[16px]" href="">Days</a>
-              </div>
-              <div
-                class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
-              >
-                <a class="text-[16px] font-bold" href="">25</a>
-                <a class="text-[16px]" href="">Days</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        </div>
-        <div class=" w-full md:w-[70%] bg-red-600 h-[200px]">
-          <div class="h-full  w-full gap-2 hidden md:flex">
+      <div class="w-full flex flex-col md:flex-row">
+        <div class="w-full md:w-[30%] md:h-[200px]">
+          <div class="w-full h-full">
             <div
-            class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
-          >
-            <img src="/assets/tech/8.png" alt="" srcset="" />
-            <a href="" class="text-[16px]">Smart Watches</a>
-            <button
-            class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+              class="w-full gap-2.5 h-full col-span-2 border-r-[2px] border-r-[#8b96a52d] p-5 flex md:flex-col items-center md:items-start"
             >
-            -25%
-            </button>
+              <div class="w-[450px] md:w-auto">
+                <h3 class="text-[15px] md:text-[20px] font-semibold">
+                  Deals and Offers
+                </h3>
+                <h5 class="text-[10px] md:text-[16px]">Hygiene equipments</h5>
+              </div>
+              <div class="w-full h-[50px] flex gap-1.5 items-center mt-3.5">
+                <div
+                  class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
+                >
+                  <a class="text-[16px] font-bold" href="">25</a>
+                  <a class="text-[16px]" href="">Days</a>
+                </div>
+                <div
+                  class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
+                >
+                  <a class="text-[16px] font-bold" href="">25</a>
+                  <a class="text-[16px]" href="">Days</a>
+                </div>
+                <div
+                  class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
+                >
+                  <a class="text-[16px] font-bold" href="">25</a>
+                  <a class="text-[16px]" href="">Days</a>
+                </div>
+                <div
+                  class="w-[45px] h-[50px] bg-gray-700 text-white rounded-[3px] flex flex-col justify-center items-center"
+                >
+                  <a class="text-[16px] font-bold" href="">25</a>
+                  <a class="text-[16px]" href="">Days</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div
-            class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
-          >
-            <img src="/assets/tech/7.png" alt="" srcset="" />
-            <a href="" class="text-[16px]">Laptops</a>
-            <button
-            class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+        </div>
+        <div class="w-full md:w-[70%] h-[200px]">
+          <div class="h-full w-full gap-2 hidden md:flex">
+            <div
+              class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
             >
-            -15%
-            </button>
-          </div>
-          <div
-            class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
-          >
-            <img src="/assets/tech/6.png" alt="" srcset="" />
-            <a href="" class="text-[16px]">GoPro Cameras</a>
-            <button
-              class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+              <img src="/assets/tech/8.png" alt="" srcset="" />
+              <a href="" class="text-[16px]">Smart Watches</a>
+              <button
+                class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+              >
+                -25%
+              </button>
+            </div>
+            <div
+              class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
             >
-              -40%
-            </button>
-          </div>
-          <div
-            class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
-          >
-            <img src="/assets/tech/5.png" alt="" srcset="" />
-            <a href="" class="text-[16px]">Headphones</a>
-            <button
-              class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+              <img src="/assets/tech/7.png" alt="" srcset="" />
+              <a href="" class="text-[16px]">Laptops</a>
+              <button
+                class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+              >
+                -15%
+              </button>
+            </div>
+            <div
+              class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
             >
-              -25%
-            </button>
-          </div>
-          <div
-            class="w-full h-full flex flex-col gap-2 justify-center items-center"
-          >
-          <img src="/assets/tech/3.png" alt="" srcset="" />
-            <a href="" class="text-[16px]">Canon Cameras</a>
-            <button
-            class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+              <img src="/assets/tech/6.png" alt="" srcset="" />
+              <a href="" class="text-[16px]">GoPro Cameras</a>
+              <button
+                class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+              >
+                -40%
+              </button>
+            </div>
+            <div
+              class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
             >
-              -25%
-            </button>
+              <img src="/assets/tech/5.png" alt="" srcset="" />
+              <a href="" class="text-[16px]">Headphones</a>
+              <button
+                class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+              >
+                -25%
+              </button>
+            </div>
+            <div
+              class="w-full h-full flex flex-col gap-2 justify-center items-center"
+            >
+              <img src="/assets/tech/3.png" alt="" srcset="" />
+              <a href="" class="text-[16px]">Canon Cameras</a>
+              <button
+                class="text-[#EB001B] font-medium text-[14px] bg-[#FFE3E3] rounded-2xl w-12"
+              >
+                -25%
+              </button>
+            </div>
           </div>
-          </div>
-    
+
           <div class="h-full w-full bg-green-400 flex md:hidden">
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
@@ -930,14 +917,14 @@
           >
             <img src="/assets/flags/norway.png" alt="" srcset="" />
             <div>
-              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[10px] font-medium">Denmark</p>
               <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
             </div>
           </div>
           <div
             class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
           >
-            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <img src="/assets/flags/australia.png" alt="" srcset="" />
             <div>
               <p class="text-[10px] font-medium">Australia</p>
               <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
@@ -946,63 +933,63 @@
           <div
             class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
           >
-            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <img src="/assets/flags/usa.png" alt="" srcset="" />
             <div>
-              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[10px] font-medium">USA</p>
               <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
             </div>
           </div>
           <div
             class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
           >
-            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <img src="/assets/flags/uk.png" alt="" srcset="" />
             <div>
-              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[10px] font-medium">UK</p>
               <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
             </div>
           </div>
           <div
             class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
           >
-            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <img src="/assets/flags/china.png" alt="" srcset="" />
             <div>
-              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[10px] font-medium">China</p>
               <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
             </div>
           </div>
           <div
             class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
           >
-            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <img src="/assets/flags/germany.png" alt="" srcset="" />
             <div>
-              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[10px] font-medium">Germany</p>
               <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
             </div>
           </div>
           <div
             class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
           >
-            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <img src="/assets/flags/italy.png" alt="" srcset="" />
             <div>
-              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[10px] font-medium">Italy</p>
               <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
             </div>
           </div>
           <div
             class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
           >
-            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <img src="/assets/flags/russia.png" alt="" srcset="" />
             <div>
-              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[10px] font-medium">Russia</p>
               <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
             </div>
           </div>
           <div
             class="w-full flex gap-1 py-2 h-[40px] justify-center md:justify-start"
           >
-            <img src="/assets/flags/norway.png" alt="" srcset="" />
+            <img src="/assets/flags/uae.png" alt="" srcset="" />
             <div>
-              <p class="text-[10px] font-medium">Australia</p>
+              <p class="text-[10px] font-medium">UAE</p>
               <p class="text-[#8B96A5] text-[8px]">shopname.ae</p>
             </div>
           </div>
@@ -1017,7 +1004,113 @@
           </div>
         </div>
       </div>
+      <!--------------------------------------- Subscribe Section ---------------------->
+      <div
+        class="w-full h-[150px] bg-[#EFF2F4] flex justify-center items-center flex-col gap-2"
+      >
+        <h3 class="font-semibold text-[20px]">Subscribe on our newsletter</h3>
+        <p class="text-[16px] text-[#606060]">
+          get daily news on upcomming offers from many suppliers all over the
+          world
+        </p>
+        <div>
+          <input
+            type="text"
+            placeholder="Email"
+            class="bg-white h-[25px] w-[200px] rounded-[5px] placeholder:pl-2.5 placeholder:text-[#606060]"
+          />
+          <button
+            class="text-white bg-[#127FFF] rounded-[3px] h-[25px] w-[80px] text-[10px] font-semibold"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+      <!------------------------------------- Footer Secion  ---------------------------->
+      <footer class="w-full h-[300px]">
+        <div class="w-full h-[80%] flex bg-white">
+          <div class="w-[30%] h-full flex justify-center items-center flex-col">
+            <div class="w-full h-[46px] flex items-center gap-1.5 justify-center">
+              <div
+                class="bg-[#0D6EFD] w-[30px] h-[30px] rounded-[7px] flex justify-center items-center"
+              >
+                <img src="/assets/Icon/heart.svg" alt="" srcset="" />
+              </div>
+              <a href="" class="text-[#8CB7F5] font-extrabold text-[17px]">
+                SALMAN
+              </a>
+            </div>
+            <p class="text-[#505050] text-[12px] w-[70%]">
+              Best information about the company gies here but now lorem ipsum is
+            </p>
+            <div class="w-full h-[40px] flex justify-center items-center gap-2">
+              <img src="/assets/Icon/heart.svg" alt="">
+              <img src="/assets/Icon/heart.svg" alt="">
+              <img src="/assets/Icon/heart.svg" alt="">
+              <img src="/assets/Icon/heart.svg" alt="">
+            </div>
+
+          </div>
+          <div class=" h-full flex-grow flex items-center justify-between px-5">
+            <div class="w-[10%]">
+              <ul>
+                <li class="font-semibold text-[16px]" >About</li>
+                <li class="text-[12px] text-[#8B96A5]">Contact</li>
+                <li class="text-[12px] text-[#8B96A5]">Discounts</li>
+                <li class="text-[12px] text-[#8B96A5]">Help</li>
+                <li class="text-[12px] text-[#8B96A5]">Register</li>
+              </ul>
+            </div>
+            <div class="w-[10%]">
+              <ul>
+                <li class="font-semibold text-[16px]" >PartnerShip</li>
+                <li class="text-[12px] text-[#8B96A5]">About us</li>
+                <li class="text-[12px] text-[#8B96A5]">find us</li>
+                <li class="text-[12px] text-[#8B96A5]">category</li>
+                <li class="text-[12px] text-[#8B96A5]">Blog</li>
+              </ul>
+            </div>
+            <div class="w-[10%]">
+              <ul>
+                <li class="font-semibold text-[16px]" >information</li>
+                <li class="text-[12px] text-[#8B96A5]">Help Center</li>
+                <li class="text-[12px] text-[#8B96A5]">Money Refund</li>
+                <li class="text-[12px] text-[#8B96A5]">Shipping</li>
+        
+              </ul>
+            </div>
+            <div class="w-[10%]">
+              <ul>
+                <li class="font-semibold text-[16px]" >Users</li>
+                <li class="text-[12px] text-[#8B96A5]">Login</li>
+                <li class="text-[12px] text-[#8B96A5]">Register</li>
+                <li class="text-[12px] text-[#8B96A5]">Setting</li>
+                <li class="text-[12px] text-[#8B96A5]">My order</li>
+              </ul>
+            </div>
+            <div class="w-[10%]">
+              <ul class="flex flex-col gap-2">
+                <li class="font-semibold text-[16px]" >Get App</li>
+                <li class="text-[12px] text-[#8B96A5]">
+                  <img src="/assets/Misc/market-button.png" alt="" srcset="">
+                </li>
+                <li class="text-[12px] text-[#8B96A5]">
+                  <img src="/assets/Misc/market-button.png" alt="" srcset="">
+                </li>
+              
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-[20%] flex justify-between items-center px-2 bg-[#EFF2F4]">
+          <p class="text-[#606060] text-[12px]">2023 commerce</p>
+          <div class="flex gap-1 items-center">
+            <img class="h-[15px]" src="/assets/flags/germany.png" alt="" srcset="">
+            <a class="text-[#606060] text-[12px]" href="">English</a>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="/script.js"></script>
   </body>
-</html>
+</html> 
