@@ -14,3 +14,11 @@ source2.addEventListener("click",()=>{
         div.classList.toggle('hidden')
     })
 })
+let source3 = document.getElementById('Source-section-3')
+let section3divs = document.querySelectorAll('.hidden-sections-3')
+
+source3.addEventListener("click",()=>{
+    section3divs.forEach((div)=>{
+        div.classList.toggle('hidden')
+    })
+})

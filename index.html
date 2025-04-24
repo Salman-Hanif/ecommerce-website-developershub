@@ -48,7 +48,7 @@
             <div
               class="bg-[#0D6EFD] w-[38px] h-[40px] rounded-[7px] flex justify-center items-center"
             >
-              <img src="/assets/Icon/vercel.svg" alt="" srcset="" />
+              <img src="/assets/Icon/logo.svg" alt="" srcset="" />
             </div>
             <a href="" class="text-[#8CB7F5] font-extrabold text-[17px]">
               SALMAN
@@ -58,7 +58,7 @@
             <input
               type="text"
               placeholder="Search"
-              class="placeholder:pl-4 border-2 rounded-bl-[5px] rounded-tl-[5px] border-blue-600 w-[550px] h-[45px]"
+              class="placeholder:pl-2 pl-4 border-2 rounded-bl-[5px] rounded-tl-[5px] border-blue-600 w-[550px] h-[45px]"
             />
             <select
               class="h-[45px] w-[110px] border-t-2 border-b-2 border-blue-500"
@@ -68,34 +68,34 @@
               <option value="">All categoris</option>
             </select>
             <button
-              class="w-[70px] h-[45px] rounded-tr-[5px] text-white rounded-br-[5px] bg-blue-500"
+              class="w-[70px] h-[45px] rounded-tr-[5px] text-white rounded-br-[5px] bg-blue-500 hover:bg-blue-400 duration-100"
             >
               Search
             </button>
           </div>
           <div class="h-[41px] flex gap-6.5 md:gap-2.5 w-[20%]">
             <div
-              class="w-[25%] h-[40px] flex flex-col justify-center items-center"
+              class="w-[25%] h-[40px] flex flex-col justify-center items-center hover:scale-105"
             >
-              <img src="/assets/Icon/" alt="" />
+              <img src="/assets/Icon/profile.svg" alt="" />
               <a class="text-[#8B96A5] text-[12px]" href="">profile</a>
             </div>
             <div
-              class="w-[25%] h-[40px] hidden md:flex flex-col justify-center items-center"
+              class="w-[25%] h-[40px] hidden md:flex flex-col justify-center items-center hover:scale-105"
             >
               <img src="/assets/Icon/message.svg" alt="" />
               <a class="text-[#8B96A5] text-[12px]" href="">message</a>
             </div>
             <div
-              class="w-[25%] h-[40px] hidden md:flex flex-col justify-center items-center"
+              class="w-[25%] h-[40px] hidden md:flex flex-col justify-center items-center hover:scale-105"
             >
               <img src="/assets/Icon/heart.svg" alt="" />
               <a class="text-[#8B96A5] text-[12px]" href="">orders</a>
             </div>
             <div
-              class="w-[25%] h-[40px] flex flex-col justify-center items-center"
+              class="w-[25%] h-[40px] flex flex-col justify-center items-center hover:scale-105"
             >
-              <img src="/assets/Icon/search.svg" alt="" />
+              <img src="/assets/Icon/Vector.svg" alt="" />
               <a class="text-[#8B96A5] text-[12px]" href="">cart</a>
             </div>
           </div>
@@ -116,17 +116,25 @@
         <div
           class="nav-two h-[50px] flex justify-center items-center px-1 md:px-5"
         >
-          <ul class="flex gap-3 md:gap-5 md:text-[19px] text-[12px] justify-center md:justify-start w-full md:w-[70%] h-full items-center">
-            <li>All category</li>
+          <ul
+            class="flex gap-3 md:gap-5 md:text-[19px] text-[12px] justify-center md:justify-start w-full md:w-[70%] h-full items-center"
+          >
+            <li class="flex items-center gap-1">
+              <img src="/assets/Icon/menu.svg" alt="">
+              All category</li>
             <li>Hot Offers</li>
             <li>Gift Box</li>
             <li>Projects</li>
             <li>Menu Items</li>
             <li>Help</li>
           </ul>
-          <div class="w-[30%] h-full hidden md:flex text-[17px] items-center justify-end gap-7">
+          <div
+            class="w-[30%] h-full hidden md:flex text-[17px] items-center justify-end gap-7"
+          >
             <div>English,USD</div>
-            <div>Ship to</div>
+            <div class="flex gap-1.5 items-center">Ship to 
+              <img class="h-[15px]" src="/assets/flags/usa.png" alt="" srcset="">
+            </div>
           </div>
         </div>
       </header>
@@ -135,7 +143,7 @@
         class="w-full md:h-[350px] flex gap-2.5 rounded-[5px] overflow-hidden bg-white"
       >
         <div class="h-full w-[25%] text-[16px] hidden md:block">
-            <ul class="hero-list flex flex-col justify-between h-full">
+          <ul class="hero-list flex flex-col justify-between h-full">
             <li class="font-bold w-full bg-[#E5F1FF] h-[25px] pl-2">
               Automobiles
             </li>
@@ -159,9 +167,11 @@
             class="h-full w-full absolute top-0 left-0 flex flex-col justify-start pt-14 pl-3 md:pl-15"
           >
             <h3 class="md:text-[28px] text-[20px]">Letest Tranding</h3>
-            <h3 class="md:text-[32px] text-[25px] font-bold">Electronic Items</h3>
+            <h3 class="md:text-[32px] text-[25px] font-bold">
+              Electronic Items
+            </h3>
             <button
-              class="bg-white w-[100px] h-[35px] text-[16px] font-medium rounded-[5px]"
+              class="bg-white w-[100px] h-[35px] text-[16px] font-medium rounded-[5px] hover:bg-[#127FFF] duration-150 hover:scale-105"
             >
               Learn More
             </button>
@@ -176,12 +186,12 @@
               <a class="text-[16px]" href="">Hi, user lets get stated</a>
             </div>
             <button
-              class="h-[30%] bg-[#127FFF] w-full text-[13px] text-white font-medium rounded-[5px]"
+              class="h-[30%] bg-[#127FFF] w-full text-[13px] text-white font-medium rounded-[5px] hover:scale-105 hover:bg-blue-400"
             >
               Join Now
             </button>
             <button
-              class="h-[30%] text-[#127FFF] bg-white text-[13px] font-medium w-full rounded-[5px]"
+              class="h-[30%] text-[#127FFF] bg-white text-[13px] font-medium w-full rounded-[5px] hover:scale-105 hover:bg-gray-300"
             >
               Login In
             </button>
@@ -206,10 +216,10 @@
               class="w-full gap-2.5 h-full col-span-2 border-r-[2px] border-r-[#8b96a52d] p-5 flex md:flex-col items-center md:items-start"
             >
               <div class="w-[450px] md:w-auto">
-                <h3 class="text-[15px] md:text-[20px] font-semibold">
+                <h3 class="text-[18px] font-semibold">
                   Deals and Offers
                 </h3>
-                <h5 class="text-[10px] md:text-[16px]">Hygiene equipments</h5>
+                <h5 class="text-[12px] md:text-[16px]">Hygiene equipments</h5>
               </div>
               <div class="w-full h-[50px] flex gap-1.5 items-center mt-3.5">
                 <div
@@ -240,7 +250,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full md:w-[70%] ">
+        <div class="w-full md:w-[70%]">
           <div class="h-full w-full gap-2 grid grid-cols-3 md:grid-cols-5">
             <div
               class="w-full h-full border-r-[2px] border-r-[#8b96a52d] flex flex-col gap-2 justify-center items-center"
@@ -275,7 +285,7 @@
                 -40%
               </button>
             </div>
-            <a href="" class="md:hidden text-blue-700" id="Source"> Source Now</a>
+           
             <div
               class="w-full hidden-divs h-full hidden border-r-[2px] border-r-[#8b96a52d] md:flex flex-col gap-2 justify-center items-center"
             >
@@ -298,6 +308,9 @@
                 -25%
               </button>
             </div>
+            <a href="" class="md:hidden text-blue-700" id="Source">
+              Show More</a
+            >
           </div>
         </div>
       </div>
@@ -306,14 +319,12 @@
       <div
         class="w-full bg-white grid grid-cols-1 md:grid-cols-6 border-[2px] border-[#8b96a52d] rounded-[5px] overflow-hidden"
       >
-
-
-      <div
-     class="w-full h-full col-span-2 border-r-[2px] border-r-[#8b96a52d]  relative hidden md:block"
+        <div
+          class="w-full h-full col-span-2 border-r-[2px] border-r-[#8b96a52d] relative hidden md:block"
         >
           <img
             class="w-full h-full"
-            src="/assets/Banner-board-800x420 2.png"
+            src="/assets/backgrounds/image92.png"
             alt=""
             srcset=""
           />
@@ -326,7 +337,7 @@
               Outdoor
             </h3>
             <button
-              class="bg-white w-[100px] h-[35px] text-[16px] font-medium rounded-[5px] mt-2.5"
+              class="bg-white w-[100px] h-[35px] text-[16px] font-medium rounded-[5px] mt-2.5 hover:bg-[#127FFF] duration-150 hover:scale-105"
             >
               Learn More
             </button>
@@ -334,9 +345,11 @@
         </div>
 
         <div
-          class="w-full h-[150px] md:h-full border-r-[2px] border-r-[#8b96a52d] grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 "
+          class="w-full h-[150px] md:h-full border-r-[2px] border-r-[#8b96a52d] grid grid-cols-2 md:grid-cols-1 md:grid-rows-2"
         >
-          <div class="w-full h-full relative pt-3 pl-2.5 border-r-[2px] border-b-[2px] border-b-[#8b96a52d] border-r-[#8b96a52d]">
+          <div
+            class="w-full h-full relative pt-3 pl-2.5 border-r-[2px] border-b-[2px] border-b-[#8b96a52d] border-r-[#8b96a52d]"
+          >
             <div class="h-10">
               <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
               <a class="text-[14px] text-[#8B96A5]" href=""
@@ -371,9 +384,11 @@
         </div>
 
         <div
-          class="w-full h-[150px] md:h-full border-r-[2px] border-r-[#8b96a52d] grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 "
+          class="w-full h-[150px] md:h-full border-r-[2px] border-r-[#8b96a52d] grid grid-cols-2 md:grid-cols-1 md:grid-rows-2"
         >
-          <div class="w-full h-full relative pt-3 pl-2.5  border-r-[2px] border-b-[2px] border-b-[#8b96a52d] border-r-[#8b96a52d]">
+          <div
+            class="w-full h-full relative pt-3 pl-2.5 border-r-[2px] border-b-[2px] border-b-[#8b96a52d] border-r-[#8b96a52d]"
+          >
             <div class="h-10">
               <h5 class="text-[16px] text-[#1C1C1C]">Blenders</h5>
               <a class="text-[14px] text-[#8B96A5]" href=""
@@ -406,11 +421,13 @@
             />
           </div>
         </div>
-        <a href="" class="md:hidden text-blue-700" id="Source-section-2"> Source Now</a>
+       
         <div
           class="w-full h-[150px] md:h-full border-r-[2px] border-r-[#8b96a52d] md:grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 hidden hidden-sections-2"
         >
-          <div class="w-full h-full relative pt-3 pl-2.5  border-r-[2px] border-b-[2px] border-b-[#8b96a52d] border-r-[#8b96a52d]">
+          <div
+            class="w-full h-full relative pt-3 pl-2.5 border-r-[2px] border-b-[2px] border-b-[#8b96a52d] border-r-[#8b96a52d]"
+          >
             <div class="h-10">
               <h5 class="text-[16px] text-[#1C1C1C]">Beds</h5>
               <a class="text-[14px] text-[#8B96A5]" href=""
@@ -445,9 +462,11 @@
         </div>
 
         <div
-          class="w-full h-[150px] md:h-full border-r-[2px] border-r-[#8b96a52d] md:grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 hidden hidden-sections-2 "
+          class="w-full h-[150px] md:h-full border-r-[2px] border-r-[#8b96a52d] md:grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 hidden hidden-sections-2"
         >
-          <div class="w-full h-full relative pt-3 pl-2.5  border-r-[2px] border-b-[2px] border-b-[#8b96a52d] border-r-[#8b96a52d]">
+          <div
+            class="w-full h-full relative pt-3 pl-2.5 border-r-[2px] border-b-[2px] border-b-[#8b96a52d] border-r-[#8b96a52d]"
+          >
             <div class="h-10">
               <h5 class="text-[16px] text-[#1C1C1C]">Pots</h5>
               <a class="text-[14px] text-[#8B96A5]" href=""
@@ -480,21 +499,21 @@
             />
           </div>
         </div>
-
-              </div>
-            <!-------------------------------------- section three ---------------------------------->
-            <h2 class="md:hidden text-[24px] font-semibold">Home and Outdoor</h2>
+        <a href="" class="md:hidden text-blue-700" id="Source-section-2">
+          Show More</a
+        >
+      </div>
+      <!-------------------------------------- section three ---------------------------------->
+      <h2 class="md:hidden text-[24px] font-semibold">Electronics and Gadgets</h2>
       <div
         class="w-full bg-white grid grid-cols-1 md:grid-cols-6 border-[2px] border-[#8b96a52d] rounded-[5px] overflow-hidden"
       >
-
-
-      <div
-     class="w-full h-full col-span-2 border-r-[2px] border-r-[#8b96a52d]  relative hidden md:block"
+        <div
+          class="w-full h-full col-span-2 border-r-[2px] border-r-[#8b96a52d] relative hidden md:block"
         >
           <img
             class="w-full h-full"
-            src="/assets/Banner-board-800x420 2.png"
+            src="/assets/backgrounds/image98.png"
             alt=""
             srcset=""
           />
@@ -503,11 +522,11 @@
             class="h-full w-full absolute top-0 left-0 flex flex-col justify-start p-8"
           >
             <h3 class="text-[20px] font-semibold">
-              Home and <br />
-              Outdoor
+              Consumer <br />
+Electronics and Gadgets
             </h3>
             <button
-              class="bg-white w-[100px] h-[35px] text-[16px] font-medium rounded-[5px] mt-2.5"
+              class="bg-white w-[100px] h-[35px] text-[16px] font-medium rounded-[5px] mt-2.5 hover:bg-[#127FFF] duration-150 hover:scale-105"
             >
               Learn More
             </button>
@@ -515,11 +534,13 @@
         </div>
 
         <div
-          class="w-full h-[150px] md:h-full border-r-[2px] border-r-[#8b96a52d] grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 "
+          class="w-full h-[150px] md:h-full border-r-[2px] border-r-[#8b96a52d] grid grid-cols-2 md:grid-cols-1 md:grid-rows-2"
         >
-          <div class="w-full h-full relative pt-3 pl-2.5 border-r-[2px] border-b-[2px] border-b-[#8b96a52d] border-r-[#8b96a52d]">
+          <div
+            class="w-full h-full relative pt-3 pl-2.5 border-r-[2px] border-b-[2px] border-b-[#8b96a52d] border-r-[#8b96a52d]"
+          >
             <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Soft Chairs</h5>
+              <h5 class="text-[16px] text-[#1C1C1C]">Tablets</h5>
               <a class="text-[14px] text-[#8B96A5]" href=""
                 >from USD <br />
                 9</a
@@ -527,7 +548,7 @@
             </div>
             <img
               class="absolute bottom-0 right-0"
-              src="/assets/interior/1.png"
+              src="/assets/tech/1.png"
               alt=""
               srcset=""
             />
@@ -536,7 +557,7 @@
             class="w-full h-full relative pt-3 pl-2.5 border-b-[2px] border-[#8b96a52d]"
           >
             <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Lamps</h5>
+              <h5 class="text-[16px] text-[#1C1C1C]">Headphones</h5>
               <a class="text-[14px] text-[#8B96A5]" href=""
                 >from USD <br />
                 9</a
@@ -544,7 +565,7 @@
             </div>
             <img
               class="absolute bottom-0 right-0"
-              src="/assets/interior/6.png"
+              src="/assets/tech/9.png"
               alt=""
               srcset=""
             />
@@ -552,19 +573,21 @@
         </div>
 
         <div
-          class="w-full h-[150px] md:h-full border-r-[2px] border-r-[#8b96a52d] grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 "
+          class="w-full h-[150px] md:h-full border-r-[2px] border-r-[#8b96a52d] grid grid-cols-2 md:grid-cols-1 md:grid-rows-2"
         >
-          <div class="w-full h-full relative pt-3 pl-2.5  border-r-[2px] border-b-[2px] border-b-[#8b96a52d] border-r-[#8b96a52d]">
+          <div
+            class="w-full h-full relative pt-3 pl-2.5 border-r-[2px] border-b-[2px] border-b-[#8b96a52d] border-r-[#8b96a52d]"
+          >
             <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Blenders</h5>
+              <h5 class="text-[16px] text-[#1C1C1C]">Cameras</h5>
               <a class="text-[14px] text-[#8B96A5]" href=""
                 >from USD <br />
                 9</a
               >
             </div>
             <img
-              class="absolute bottom-0 right-0"
-              src="/assets/interior/2.png"
+              class="absolute bottom-0 right-0 w-[80px] h-[80px]"
+              src="/assets/tech/6.png"
               alt=""
               srcset=""
             />
@@ -573,35 +596,37 @@
             class="w-full h-full relative pt-3 pl-2.5 border-b-[2px] border-[#8b96a52d]"
           >
             <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Decoratives</h5>
+              <h5 class="text-[16px] text-[#1C1C1C]">Laptops</h5>
               <a class="text-[14px] text-[#8B96A5]" href=""
                 >from USD <br />
                 9</a
               >
             </div>
             <img
-              class="absolute bottom-0 right-0"
-              src="/assets/interior/4.png"
+              class="absolute bottom-0 right-0 w-[80px] h-[80px]"
+              src="/assets/tech/7.png"
               alt=""
               srcset=""
             />
           </div>
         </div>
-        <a href="" class="md:hidden text-blue-700" id="Source-section-2"> Source Now</a>
+       
         <div
-          class="w-full h-[150px] md:h-full border-r-[2px] border-r-[#8b96a52d] md:grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 hidden hidden-sections-2"
+          class="w-full h-[150px] md:h-full border-r-[2px] border-r-[#8b96a52d] md:grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 hidden hidden-sections-3"
         >
-          <div class="w-full h-full relative pt-3 pl-2.5  border-r-[2px] border-b-[2px] border-b-[#8b96a52d] border-r-[#8b96a52d]">
+          <div
+            class="w-full h-full relative pt-3 pl-2.5 border-r-[2px] border-b-[2px] border-b-[#8b96a52d] border-r-[#8b96a52d]"
+          >
             <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Beds</h5>
+              <h5 class="text-[16px] text-[#1C1C1C]">Premium Watches</h5>
               <a class="text-[14px] text-[#8B96A5]" href=""
                 >from USD <br />
                 9</a
               >
             </div>
             <img
-              class="absolute bottom-0 right-0"
-              src="/assets/interior/5.png"
+              class="absolute bottom-0 right-0 w-[80px] h-[80px]"
+              src="/assets/tech/8.png"
               alt=""
               srcset=""
             />
@@ -610,15 +635,15 @@
             class="w-full h-full relative pt-3 pl-2.5 border-b-[2px] border-[#8b96a52d]"
           >
             <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Home Appliances</h5>
+              <h5 class="text-[16px] text-[#1C1C1C]">Phones</h5>
               <a class="text-[14px] text-[#8B96A5]" href=""
                 >from USD <br />
                 9</a
               >
             </div>
             <img
-              class="absolute bottom-0 right-0"
-              src="/assets/interior/7.png"
+              class="absolute bottom-0 right-0 w-[80px] h-[80px]"
+              src="/assets/tech/3.png"
               alt=""
               srcset=""
             />
@@ -626,19 +651,21 @@
         </div>
 
         <div
-          class="w-full h-[150px] md:h-full border-r-[2px] border-r-[#8b96a52d] md:grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 hidden hidden-sections-2 "
+          class="w-full h-[150px] md:h-full border-r-[2px] border-r-[#8b96a52d] md:grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 hidden hidden-sections-3"
         >
-          <div class="w-full h-full relative pt-3 pl-2.5  border-r-[2px] border-b-[2px] border-b-[#8b96a52d] border-r-[#8b96a52d]">
+          <div
+            class="w-full h-full relative pt-3 pl-2.5 border-r-[2px] border-b-[2px] border-b-[#8b96a52d] border-r-[#8b96a52d]"
+          >
             <div class="h-10">
-              <h5 class="text-[16px] text-[#1C1C1C]">Pots</h5>
+              <h5 class="text-[16px] text-[#1C1C1C]">Gaming Headphones</h5>
               <a class="text-[14px] text-[#8B96A5]" href=""
                 >from USD <br />
                 9</a
               >
             </div>
             <img
-              class="absolute bottom-0 right-0"
-              src="/assets/interior/3.png"
+              class="absolute bottom-0 right-0 w-[80px] h-[80px]"
+              src="/assets/tech/5.png"
               alt=""
               srcset=""
             />
@@ -661,14 +688,16 @@
             />
           </div>
         </div>
-
-              </div>
+        <a href="" class="md:hidden text-blue-700" id="Source-section-3">
+          Show More</a
+        >
+      </div>
       <!-------------------------------- supply section --------------------------------->
       <div
         class="w-full rounded-[5px] h-[520px] md:h-auto overflow-hidden relative"
       >
         <img
-          class="object-cover h-full"
+          class="object-cover h-full w-full"
           src="/assets/blue banner.png"
           alt=""
           srcset=""
@@ -728,7 +757,7 @@
         <h3 class="text-[24px] font-semibold">Recommendation</h3>
         <div class="w-full h-full grid grid-cols-2 lg:grid-cols-5 gap-5">
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
             <img src="/assets/cloth/1.png" alt="" srcset="" />
             <div class="flex flex-col">
@@ -739,7 +768,7 @@
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
             <img src="/assets/cloth/3.png" alt="" srcset="" />
             <div class="flex flex-col">
@@ -750,7 +779,7 @@
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
             <img src="/assets/cloth/7.png" alt="" srcset="" />
             <div class="flex flex-col">
@@ -761,40 +790,34 @@
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
             <img src="/assets/cloth/6.png" alt="" srcset="" />
             <div class="flex flex-col">
               <a class="text-[16px] font-medium" href="">$10.30</a>
-              <a class="text-[12px] text-[#8B96A5]" href=""
-                >Lather Walltet</a
-              >
+              <a class="text-[12px] text-[#8B96A5]" href="">Lather Walltet</a>
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
             <img src="/assets/cloth/5.png" alt="" srcset="" />
             <div class="flex flex-col">
               <a class="text-[16px] font-medium" href="">$90.00</a>
-              <a class="text-[12px] text-[#8B96A5]" href=""
-                >Blue Bag</a
-              >
+              <a class="text-[12px] text-[#8B96A5]" href="">Blue Bag</a>
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
             <img src="/assets/cloth/4.png" alt="" srcset="" />
             <div class="flex flex-col">
               <a class="text-[16px] font-medium" href="">$30.30</a>
-              <a class="text-[12px] text-[#8B96A5]" href=""
-                >Shorts for men</a
-              >
+              <a class="text-[12px] text-[#8B96A5]" href="">Shorts for men</a>
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
             <img src="/assets/tech/5.png" alt="" srcset="" />
             <div class="flex flex-col">
@@ -805,29 +828,25 @@
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
             <img src="/assets/tech/6.png" alt="" srcset="" />
             <div class="flex flex-col">
               <a class="text-[16px] font-medium" href="">$400.00</a>
-              <a class="text-[12px] text-[#8B96A5]" href=""
-                >Cannot Camera</a
-              >
+              <a class="text-[12px] text-[#8B96A5]" href="">Cannot Camera</a>
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
             <img src="/assets/tech/3.png" alt="" srcset="" />
             <div class="flex flex-col">
               <a class="text-[16px] font-medium" href="">$149.99</a>
-              <a class="text-[12px] text-[#8B96A5]" href=""
-                >Vivo Y30 pro</a
-              >
+              <a class="text-[12px] text-[#8B96A5]" href="">Vivo Y30 pro</a>
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
+            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
             <img src="/assets/tech/7.png" alt="" srcset="" />
             <div class="flex flex-col">
@@ -848,7 +867,11 @@
           <div
             class="h-[150px] rounded-[5px] relative w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
           >
-            <img class="w-full h-[65%]" src="/assets/backgrounds/image108.png" alt="" />
+            <img
+              class="w-full h-[65%]"
+              src="/assets/backgrounds/image108.png"
+              alt=""
+            />
             <div class="w-[40%] h-[35%] pl-2.5 pt-2.5">
               <p class="text-[12px] leading-4 font-medium" href="">
                 Sources from Industries Hub
@@ -863,7 +886,11 @@
           <div
             class="h-[150px] rounded-[5px] relative w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
           >
-            <img class="w-full h-[65%]" src="/assets/backgrounds/image104.png" alt="" />
+            <img
+              class="w-full h-[65%]"
+              src="/assets/backgrounds/image104.png"
+              alt=""
+            />
             <div class="w-[40%] h-[35%] pl-2.5 pt-2.5">
               <p class="text-[12px] leading-4 font-medium" href="">
                 Costumze Your Products
@@ -878,7 +905,11 @@
           <div
             class="h-[150px] rounded-[5px] relative w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
           >
-            <img class="w-full h-[65%]" src="/assets/backgrounds/image106.png" alt="" />
+            <img
+              class="w-full h-[65%]"
+              src="/assets/backgrounds/image106.png"
+              alt=""
+            />
             <div class="w-[40%] h-[35%] pl-2.5 pt-2.5">
               <p class="text-[12px] leading-4 font-medium" href="">
                 Fast Reliable Shipping by ocean or air
@@ -893,10 +924,14 @@
           <div
             class="h-[150px] rounded-[5px] relative w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d]"
           >
-            <img class="w-full h-[65%]" src="/assets/backgrounds/image107.png" alt="" />
+            <img
+              class="w-full h-[65%]"
+              src="/assets/backgrounds/image107.png"
+              alt=""
+            />
             <div class="w-[40%] h-[35%] pl-2.5 pt-2.5">
               <p class="text-[12px] leading-4 font-medium" href="">
-                Product Monitoring or Inspection 
+                Product Monitoring or Inspection
               </p>
               <div
                 class="bg-[#D1E7FF] w-[40px] h-[40px] rounded-[50%] absolute right-[6%] top-[50%] flex justify-center items-center"
@@ -1030,8 +1065,12 @@
       <!------------------------------------- Footer Secion  ---------------------------->
       <footer class="w-full h-[300px]">
         <div class="w-full h-[80%] flex bg-white">
-          <div class="md:w-[30%] w-full h-full flex justify-center md:items-center flex-col">
-            <div class="w-full h-[46px] flex items-center gap-1.5 md:justify-center">
+          <div
+            class="md:w-[30%] w-full h-full flex justify-center md:items-center flex-col"
+          >
+            <div
+              class="w-full h-[46px] flex items-center gap-1.5 md:justify-center"
+            >
               <div
                 class="bg-[#0D6EFD] w-[30px] h-[30px] rounded-[7px] flex justify-center items-center"
               >
@@ -1042,21 +1081,23 @@
               </a>
             </div>
             <p class="text-[#505050] text-[12px] w-[70%]">
-              Best information about the company gies here but now lorem ipsum is
+              Best information about the company gies here but now lorem ipsum
+              is
             </p>
-            <div class="w-full h-[40px] flex md:justify-center items-center gap-2">
-              <img src="/assets/Icon/Fill 183.svg" alt="">
-              <img src="/assets/Icon/Fill 184.svg" alt="">
-              <img src="/assets/Icon/Fill 209.svg" alt="">
-              <img src="/assets/Icon/Combined Shape.svg" alt="">
-              <img src="/assets/Icon/Combined Shape1.svg" alt="">
+            <div
+              class="w-full h-[40px] flex md:justify-center items-center gap-2"
+            >
+              <img src="/assets/Icon/Fill 183.svg" alt="" />
+              <img src="/assets/Icon/Fill 184.svg" alt="" />
+              <img src="/assets/Icon/Fill 209.svg" alt="" />
+              <img src="/assets/Icon/Combined Shape.svg" alt="" />
+              <img src="/assets/Icon/Combined Shape1.svg" alt="" />
             </div>
-
           </div>
-          <div class=" h-full flex flex-grow items-center justify-between px-5">
+          <div class="h-full flex flex-grow items-center justify-between px-5">
             <div class="w-[10%] hidden md:block">
               <ul>
-                <li class="font-semibold text-[16px]" >About</li>
+                <li class="font-semibold text-[16px]">About</li>
                 <li class="text-[12px] text-[#8B96A5]">Contact</li>
                 <li class="text-[12px] text-[#8B96A5]">Discounts</li>
                 <li class="text-[12px] text-[#8B96A5]">Help</li>
@@ -1065,7 +1106,7 @@
             </div>
             <div class="w-[10%] hidden md:block">
               <ul>
-                <li class="font-semibold text-[16px]" >PartnerShip</li>
+                <li class="font-semibold text-[16px]">PartnerShip</li>
                 <li class="text-[12px] text-[#8B96A5]">About us</li>
                 <li class="text-[12px] text-[#8B96A5]">find us</li>
                 <li class="text-[12px] text-[#8B96A5]">category</li>
@@ -1074,16 +1115,15 @@
             </div>
             <div class="w-[10%] hidden md:block">
               <ul>
-                <li class="font-semibold text-[16px]" >information</li>
+                <li class="font-semibold text-[16px]">information</li>
                 <li class="text-[12px] text-[#8B96A5]">Help Center</li>
                 <li class="text-[12px] text-[#8B96A5]">Money Refund</li>
                 <li class="text-[12px] text-[#8B96A5]">Shipping</li>
-        
               </ul>
             </div>
             <div class="w-[10%] hidden md:block">
               <ul>
-                <li class="font-semibold text-[16px]" >Users</li>
+                <li class="font-semibold text-[16px]">Users</li>
                 <li class="text-[12px] text-[#8B96A5]">Login</li>
                 <li class="text-[12px] text-[#8B96A5]">Register</li>
                 <li class="text-[12px] text-[#8B96A5]">Setting</li>
@@ -1092,22 +1132,28 @@
             </div>
             <div class="md:w-[10%] w-full">
               <ul class="flex flex-col gap-2">
-                <li class="font-semibold text-[16px]" >Get App</li>
+                <li class="font-semibold text-[16px]">Get App</li>
                 <li class="text-[12px] text-[#8B96A5]">
-                  <img src="/assets/Misc/market-button.png" alt="" srcset="">
+                  <img src="/assets/Misc/market-button.png" alt="" srcset="" />
                 </li>
                 <li class="text-[12px] text-[#8B96A5]">
-                  <img src="/assets/Misc/market-button.png" alt="" srcset="">
+                  <img src="/assets/Misc/market-button.png" alt="" srcset="" />
                 </li>
-              
               </ul>
             </div>
           </div>
         </div>
-        <div class="w-full h-[20%] flex justify-between items-center px-2 bg-[#EFF2F4]">
+        <div
+          class="w-full h-[20%] flex justify-between items-center px-2 bg-[#EFF2F4]"
+        >
           <p class="text-[#606060] text-[12px]">2023 commerce</p>
           <div class="flex gap-1 items-center">
-            <img class="h-[15px]" src="/assets/flags/germany.png" alt="" srcset="">
+            <img
+              class="h-[15px]"
+              src="/assets/flags/germany.png"
+              alt=""
+              srcset=""
+            />
             <a class="text-[#606060] text-[12px]" href="">English</a>
           </div>
         </div>
@@ -1115,4 +1161,4 @@
     </div>
     <script src="/script.js"></script>
   </body>
-</html> 
+</html>
