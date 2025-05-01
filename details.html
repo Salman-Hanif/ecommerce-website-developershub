@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    <div class="wrapper bg-[#F7FAFC] w-[90%] flex flex-col gap-3 rounded-[5px] overflow-hidden mx-auto">
+         <!--------------------------- Header Section  --------------------------->
+      <header>
+        <nav
+          class="w-full md:h-[86px] h-[50px] py-8 px-5 flex md:justify-center justify-between bg-white items-center gap-7 border-b-[2px] border-b-[#8b96a52d]"
+        >
+          <div class="md:w-[30%] w-full h-[46px] flex items-center gap-1.5">
+            <a class="md:hidden" href="/index.html">
+              <img id="nav-menu" class="block md:hidden" src="/assets/Icon/inventory_2.svg" alt="" srcset="">
+            </a>
+            <div
+              class="bg-[#0D6EFD] w-[38px] h-[40px] rounded-[7px] hidden md:flex justify-center items-center"
+            >
+              <img src="/assets/Icon/logo.svg" alt="" srcset="" />
+            </div>
+            <a href="" class="text-[#8CB7F5] font-extrabold text-[17px] hidden md:block">
+              SALMAN
+            </a>
+            <a href="" class=" text-[18px] font-semibold md:hidden">
+              Mobile Accesories
+            </a>
+          </div>
+          <div class="p-0 m-0 md:flex w-[60%] hidden">
+            <input
+              type="text"
+              placeholder="Search"
+              class="placeholder:pl-2 pl-4 border-2 rounded-bl-[5px] rounded-tl-[5px] border-blue-600 w-[550px] h-[45px]"
+            />
+            <select
+              class="h-[45px] w-[110px] border-t-2 border-b-2 border-blue-500"
+              name=""
+              id=""
+            >
+              <option value="">All categoris</option>
+            </select>
+            <button
+              class="w-[70px] h-[45px] rounded-tr-[5px] text-white rounded-br-[5px] bg-blue-500 hover:bg-blue-400 duration-100"
+            >
+              Search
+            </button>
+          </div>
+          <div class="h-[41px] flex gap-6.5 md:gap-2.5 w-[15%]">
+            <div
+              class="w-[25%] h-[40px] flex flex-col justify-center items-center hover:scale-105"
+            >
+              <img src="/assets/Icon/profile.svg" alt="" />
+              <a class="text-[#8B96A5] text-[12px]" href="">profile</a>
+            </div>
+            <div
+              class="w-[25%] h-[40px] hidden md:flex flex-col justify-center items-center hover:scale-105"
+            >
+              <img src="/assets/Icon/message.svg" alt="" />
+              <a class="text-[#8B96A5] text-[12px]" href="">message</a>
+            </div>
+            <div
+              class="w-[25%] h-[40px] hidden md:flex flex-col justify-center items-center hover:scale-105"
+            >
+              <img src="/assets/Icon/heart.svg" alt="" />
+              <a class="text-[#8B96A5] text-[12px]" href="">orders</a>
+            </div>
+            <div
+              class="w-[25%] h-[40px] flex flex-col justify-center items-center hover:scale-105"
+            >
+              <img src="/assets/Icon/Vector.svg" alt="" />
+              <a class="text-[#8B96A5] text-[12px]" href="">cart</a>
+            </div>
+          </div>
+        </nav>
+        <div class="hidden-nav w-full h-[50px] md:hidden flex items-center">
+          <input
+            type="text"
+            placeholder="Search"
+            class="placeholder:pl-4 border-2 rounded-bl-[5px] rounded-tl-[5px] border-blue-600 flex-grow h-full"
+          />
+
+          <button
+            class="w-[70px] h-full rounded-tr-[5px] text-white text-[17px] font-bold rounded-br-[5px] bg-blue-500"
+          >
+            Search
+          </button>
+        </div>
+        <div
+          class="nav-two h-[50px] hidden md:flex justify-center items-center px-1 md:px-5"
+        >
+          <ul
+            class="flex gap-3 md:gap-5 md:text-[19px] text-[12px] justify-center md:justify-start w-full lg:w-[70%] h-full items-center"
+          >
+            <li class="flex items-center gap-1">
+              <img src="/assets/Icon/menu.svg" alt="" />
+              All category
+            </li>
+            <li>Hot Offers</li>
+            <li>Gift Box</li>
+            <li>Projects</li>
+            <li>Menu Items</li>
+            <li>Help</li>
+          </ul>
+          <div
+            class="w-[30%] h-full hidden lg:flex text-[17px] items-center justify-end gap-7"
+          >
+            <div>English,USD</div>
+            <div class="flex gap-1.5 items-center">
+              Ship to
+              <img
+                class="h-[15px]"
+                src="/assets/flags/usa.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--------------------------------------- Main Section --------------------------->
+      <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8.5 bg-white py-3 border-gray-200 border-[1px] rounded-[2px]">
+        <div class="w-full flex flex-col items-end gap-3.5">
+          <div class="w-full grid-rows-1 flex justify-center overflow-hidden border-2 border-gray-200">
+            <img class="w-full" src="/assets/cloth/7.png" alt="" srcset="">
+          </div>
+          <div class="w-full h-[50px] md:grid grid-cols-6 gap-1 hidden">
+            <img class="w-full h-full border-[1px] border-gray-200 rounded-[1px]" src="/assets/cloth/5.png" alt="">
+            <img class="w-full h-full border-[1px] border-gray-200 rounded-[1px]" src="/assets/cloth/5.png" alt="">
+            <img class="w-full h-full border-[1px] border-gray-200 rounded-[1px]" src="/assets/cloth/5.png" alt="">
+            <img class="w-full h-full border-[1px] border-gray-200 rounded-[1px]" src="/assets/cloth/5.png" alt="">
+            <img class="w-full h-full border-[1px] border-gray-200 rounded-[1px]" src="/assets/cloth/5.png" alt="">
+            <img class="w-full h-full border-[1px] border-gray-200 rounded-[1px]" src="/assets/cloth/5.png" alt="">
+          </div>
+        </div>
+        <div class="w-full">
+          <p class="text-green-500">&#10003;in Stock</p>
+          <h4 class="font-semibold text-[20px]">Mens long sleves t-shirt cotton base layer slim muscles</h4>
+          <div class="gap-1.5 hidden lg:flex">
+            <img src="/assets/Icon/heart.svg" alt="">
+            <img src="/assets/Icon/heart.svg" alt="">
+            <img src="/assets/Icon/heart.svg" alt="">
+            <img src="/assets/Icon/heart.svg" alt="">
+            <img src="/assets/Icon/heart.svg" alt="">
+            <p class="text-orange-400">9.3</p>
+            <img src="/assets/Icon/heart.svg" alt="">
+            <p>132 reviews</p>
+            <img src="/assets/Icon/heart.svg" alt="">
+            <p>154 sold</p>
+          </div>
+          <div class="w-full h-[65px] px-1 bg-[#FFF0DF] grid grid-cols-3 place-items-center">
+            <div class="w-full">
+              <p class="text-[#FA3434] font-semibold text-[18px]">$98.90</p>
+              <p class="text-[10px] text-gray-400">50-100 pcs</p>
+            </div>
+            <div class="w-full border-l-[1px] border-gray-300 px-2.5">
+              <p class="font-semibold text-[18px]">$90.00</p>
+              <p class="text-[10px] text-gray-400">100-500 pcs</p>
+            </div>
+            <div class="w-full border-l-[1px] border-gray-300 px-2.5">
+              <p class="font-semibold text-[18px]">$85.50</p>
+              <p class="text-[10px] text-gray-400">500-700 pcs</p>
+            </div>
+          </div>
+          <div class="w-full hidden md:block">
+          <div class="w-full flex items-center px-2 py-4 border-b-[1px] border-gray-300">
+            <p class="text-gray-500 w-[150px]">Price:</p>
+            <p>Negotiable</p>
+          </div>
+          <div class="w-full flex flex-col px-2 border-b-[1px] border-gray-300">
+            <div class="flex py-2">
+              <p class="text-gray-500 w-[150px]">Type:</p>
+              <p>Classic Shirt</p>
+            </div>
+            <div class="flex py-2">
+              <p class="text-gray-500 w-[150px]">Material:</p>
+              <p>Fabric</p>
+            </div>
+            <div class="flex py-2">
+              <p class="text-gray-500 w-[150px]">Design:</p>
+              <p>Modern</p>
+            </div>
+          </div>
+          <div class="w-full flex flex-col px-2 border-b-[1px] border-gray-300">
+            <div class="flex py-2">
+              <p class="text-gray-500 w-[150px]">Costumizations:</p>
+              <p>Customized Colors</p>
+            </div>
+            <div class="flex py-2">
+              <p class="text-gray-500 w-[150px]">Protection:</p>
+              <p>Refund Policy</p>
+            </div>
+            <div class="flex py-2">
+              <p class="text-gray-500 w-[150px]">Warrenty:</p>
+              <p>12 Months</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="w-screen lg:w-full px-6">
+          <div class=" w-full py-3.5 border-b-[1px] border-gray-300">
+            <div class="w-full h-[60px] flex gap-2.5 items-center">
+              <img class="h-full" src="/assets/Icon/globe.svg" alt="">
+              <p class="font-semibold text-[18px]">Suppliers <br> Fashonate pvt limmited</p>
+            </div>
+          </div>
+          <div class="flex gap-5 w-full py-1.5 items-center">
+            <img src="/assets/flags/germany.png" alt="">
+            <p>Germany, Berlin</p>
+          </div>
+          <div class="flex gap-5 w-full py-1.5 items-center">
+            <img src="/assets/Icon/inventory_2.svg" alt="">
+            <p>Verified</p>
+          </div>
+          <div class="flex gap-5 w-full py-1.5 items-center">
+            <img class="h-[20px]" src="/assets/Icon/globe.svg" alt="">
+            <p>All over the World</p>
+          </div>
+          <div class="flex gap-2.5 w-[300px] sm:w-[500px] md:w-full mx-auto flex-col mt-3.5 items-center justify-center">
+
+            <button
+            class="h-[50px] bg-[#127FFF] w-full text-[20px] text-white font-medium rounded-[5px] hover:scale-105 hover:bg-blue-400"
+            >
+            Send Inquiry
+          </button>
+          <button
+          class="h-[50px] hidden md:block text-[#127FFF] bg-white text-[20px] font-medium w-full rounded-[5px] hover:scale-105 hover:bg-gray-300"
+          >
+          Seller's Profit
+        </button>
+      </div>
+        </div>
+      </div>
+      <div class=" w-full lg:flex text-[#505050] hidden">
+        <div class="w-[70%] px-5.5 flex flex-col gap-3">
+          <div class="w-full h-[50px] flex items-center">
+            <ul class=" flex gap-3.5">
+              <li class="hover:text-blue-600 hover:underline font-semibold">Description</li>
+              <li class="hover:text-blue-600 hover:underline font-semibold">Reviews</li>
+              <li class="hover:text-blue-600 hover:underline font-semibold">Shipping</li>
+              <li class="hover:text-blue-600 hover:underline font-semibold">About Sellers</li>
+            </ul>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, culpa. Itaque commodi animi aperiam est id? Reprehenderit ratione, quae porro ea fugit fugiat dicta possimus nesciunt commodi aliquam debitis. Quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sint. Adipisci quos hic iure, facere ex, placeat quo qui ipsum autem earum error blanditiis debitis dolor cupiditate vel dolorum nemo doloremque? Exercitationem, voluptate. Tempora aliquam expedita consequatur quasi eaque saepe sunt, nam laboriosam illum earum hic voluptates, vitae magnam odit.</p>
+          <div class="flex gap-10 border-[1px] border-gray-300 w-1/2">
+            <ul class="flex flex-col gap-3 bg-[#EFF2F4] px-7 border-r-[1px] border-r-gray-300">
+              <li>Model</li>
+              <li>Style</li>
+              <li>Certificate</li>
+              <li>Size</li>
+            </ul>
+            <ul class="flex flex-col gap-3">
+              <li>#3488856</li>
+              <li>Classic</li>
+              <li>ISO-228789544</li>
+              <li>34mm x 450mm x 19mm</li>
+            </ul>
+          </div>
+          <ul class="flex flex-col gap-1.5">
+            <li>&#10003; Some great new features</li>
+            <li>&#10003; Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus quasi aut </li>
+            <li>&#10003;  blanditiis neque saepe inventore, </li>
+            <li>&#10003; facere repudiandae dolorem eos ad,</li>
+            <li>&#10003; aperiam mollitia molestias soluta ipsa numquam at architecto a.</li>
+          </ul>
+           </div>
+        <div class="w-[30%] flex flex-col gap-3 p-2 border-[1px] border-gray-300 bg-white">
+          <h2 class="font-bold text-2xl">You May Like</h2>
+          <div class="w-full">
+            <div class="w-full h-[90px] p-2 flex gap-1.5">
+              <img class="h-full border-[1px] border-gray-300" src="/assets/cloth/5.png" alt="" srcset="">
+              <div class=" flex flex-col justify-center">
+                <p class="font-semibold text-[15px]">Men Blaze Sets Elegent Formal</p>
+                <p class="text-[12px]">$7.00 - $99.00</p>
+              </div>
+            </div>
+            <div class="w-full h-[90px] p-2 flex gap-1.5">
+              <img class="h-full border-[1px] border-gray-300" src="/assets/cloth/5.png" alt="" srcset="">
+              <div class=" flex flex-col justify-center">
+                <p class="font-semibold text-[15px]">Men Blaze Sets Elegent Formal</p>
+                <p class="text-[12px]">$7.00 - $99.00</p>
+              </div>
+            </div>
+            <div class="w-full h-[90px] p-2 flex gap-1.5">
+              <img class="h-full border-[1px] border-gray-300" src="/assets/cloth/5.png" alt="" srcset="">
+              <div class=" flex flex-col justify-center">
+                <p class="font-semibold text-[15px]">Men Blaze Sets Elegent Formal</p>
+                <p class="text-[12px]">$7.00 - $99.00</p>
+              </div>
+            </div>
+            <div class="w-full h-[90px] p-2 flex gap-1.5">
+              <img class="h-full border-[1px] border-gray-300" src="/assets/cloth/5.png" alt="" srcset="">
+              <div class=" flex flex-col justify-center">
+                <p class="font-semibold text-[15px]">Men Blaze Sets Elegent Formal</p>
+                <p class="text-[12px]">$7.00 - $99.00</p>
+              </div>
+            </div>
+            <div class="w-full h-[90px] p-2 flex gap-1.5">
+              <img class="h-full border-[1px] border-gray-300" src="/assets/cloth/5.png" alt="" srcset="">
+              <div class=" flex flex-col justify-center">
+                <p class="font-semibold text-[15px]">Men Blaze Sets Elegent Formal</p>
+                <p class="text-[12px]">$7.00 - $99.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full block md:hidden">
+        <h2 class="font-semibold text-2xl">You May Like</h2>
+        <div class="w-full grid grid-cols-3 gap-1.5">
+          <div class="flex items-center flex-col justify-center border-[1px] border-gray-300 bg-white px-0.5 py-1">
+            <img src="/assets/cloth/8.png" alt="" srcset="">
+            <p class="font-semibold">$10.00</p>
+            <p class="text-[13px] text-gray-600 text-center">Solid Backpack blue Colored</p>
+            <p class="text-[15px]"></p>
+          </div>
+          <div class="flex items-center flex-col justify-center border-[1px] border-gray-300 bg-white px-0.5 py-1">
+            <img src="/assets/cloth/8.png" alt="" srcset="">
+            <p class="font-semibold">$10.00</p>
+            <p class="text-[13px] text-gray-600 text-center">Solid Backpack blue Colored</p>
+            <p class="text-[15px]"></p>
+          </div>
+          <div class="flex items-center flex-col justify-center border-[1px] border-gray-300 bg-white px-0.5 py-1">
+            <img src="/assets/cloth/8.png" alt="" srcset="">
+            <p class="font-semibold">$10.00</p>
+            <p class="text-[13px] text-gray-600 text-center">Solid Backpack blue Colored</p>
+            <p class="text-[15px]"></p>
+          </div>
+        </div>
+      </div>
+      <!--------------------------------------- Subscribe Section ---------------------->
+    <div
+    class="w-full h-[150px] bg-[#EFF2F4] flex justify-center items-center flex-col gap-2"
+  >
+    <h3 class="font-semibold text-[20px]">Subscribe on our newsletter</h3>
+    <p class="text-[16px] text-[#606060] text-center">
+      get daily news on upcomming offers from many suppliers all over the
+      world
+    </p>
+    <div>
+      <input
+        type="text"
+        placeholder="Email"
+        class="bg-white h-[25px] w-[200px] rounded-[5px] placeholder:pl-2.5 placeholder:text-[#606060]"
+      />
+      <button
+        class="text-white bg-[#127FFF] rounded-[3px] h-[25px] w-[80px] text-[10px] font-semibold"
+      >
+        Subscribe
+      </button>
+    </div>
+  </div>
+  <!------------------------------------- Footer Secion  ---------------------------->
+  <footer class="w-full h-[300px]">
+    <div class="w-full h-[80%] flex bg-white">
+      <div
+        class="md:w-[30%] w-full h-full flex justify-center md:items-center flex-col"
+      >
+        <div
+          class="w-full h-[46px] flex items-center gap-1.5 md:justify-center"
+        >
+          <div
+            class="bg-[#0D6EFD] w-[30px] h-[30px] rounded-[7px] flex justify-center items-center"
+          >
+            <img src="/assets/Icon/logo.svg" alt="" srcset="" />
+          </div>
+          <a href="" class="text-[#8CB7F5] font-extrabold text-[17px]">
+            SALMAN
+          </a>
+        </div>
+        <p class="text-[#505050] text-[12px] w-[70%]">
+          Best information about the company gies here but now class="hidden md:block" lorem ipsum
+          is
+        </p>
+        <div
+          class="w-full h-[40px] flex md:justify-center items-center gap-2"
+        >
+          <img class="w-[20px]" src="/assets/Icon/Fill 183.svg" alt="" />
+          <img class="w-[20px]" src="/assets/Icon/Fill 184.svg" alt="" />
+          <img class="w-[20px]" src="/assets/Icon/Fill 209.svg" alt="" />
+          <img class="w-[20px]" src="/assets/Icon/Combined Shape.svg" alt="" />
+          <img class="w-[20px]" src="/assets/Icon/Combined Shape1.svg" alt="" />
+        </div>
+      </div>
+      <div class="h-full flex flex-grow items-center justify-between px-5">
+        <div class="w-[10%] hidden md:block">
+          <ul>
+            <li class="font-semibold text-[16px]">About</li>
+            <li class="text-[12px] text-[#8B96A5]">Contact</li>
+            <li class="text-[12px] text-[#8B96A5]">Discounts</li>
+            <li class="text-[12px] text-[#8B96A5]">Help</li>
+            <li class="text-[12px] text-[#8B96A5]">Register</li>
+          </ul>
+        </div>
+        <div class="w-[10%] hidden md:block">
+          <ul>
+            <li class="font-semibold text-[16px]">PartnerShip</li>
+            <li class="text-[12px] text-[#8B96A5]">About us</li>
+            <li class="text-[12px] text-[#8B96A5]">find us</li>
+            <li class="text-[12px] text-[#8B96A5]">category</li>
+            <li class="text-[12px] text-[#8B96A5]">Blog</li>
+          </ul>
+        </div>
+        <div class="w-[10%] hidden md:block">
+          <ul>
+            <li class="font-semibold text-[16px]">information</li>
+            <li class="text-[12px] text-[#8B96A5]">Help Center</li>
+            <li class="text-[12px] text-[#8B96A5]">Money Refund</li>
+            <li class="text-[12px] text-[#8B96A5]">Shipping</li>
+          </ul>
+        </div>
+        <div class="w-[10%] hidden md:block">
+          <ul>
+            <li class="font-semibold text-[16px]">Users</li>
+            <li class="text-[12px] text-[#8B96A5]">Login</li>
+            <li class="text-[12px] text-[#8B96A5]">Register</li>
+            <li class="text-[12px] text-[#8B96A5]">Setting</li>
+            <li class="text-[12px] text-[#8B96A5]">My order</li>
+          </ul>
+        </div>
+        <div class="md:w-[10%] w-full">
+          <ul class="flex flex-col gap-2">
+            <li class="font-semibold text-[16px]">Get App</li>
+            <li class="text-[12px] text-[#8B96A5]">
+              <img src="/assets/Misc/market-button.png" alt="" srcset="" />
+            </li>
+            <li class="text-[12px] text-[#8B96A5]">
+              <img src="/assets/Misc/market-button.png" alt="" srcset="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-full h-[20%] flex justify-between items-center px-2 bg-[#EFF2F4]"
+    >
+      <p class="text-[#606060] text-[12px]">2023 commerce</p>
+      <div class="flex gap-1 items-center">
+        <img
+          class="h-[15px]"
+          src="/assets/flags/germany.png"
+          alt=""
+          srcset=""
+        />
+        <a class="text-[#606060] text-[12px]" href="">English</a>
+      </div>
+    </div>
+  </footer>
+    </div>
+</body>
+</html>

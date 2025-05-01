@@ -14,14 +14,19 @@
           class="w-full md:h-[86px] h-[50px] py-8 px-5 flex md:justify-center justify-between bg-white items-center gap-7 border-b-[2px] border-b-[#8b96a52d]"
         >
           <div class="md:w-[30%] w-full h-[46px] flex items-center gap-1.5">
-            <img id="nav-menu" class="block md:hidden" src="/assets/Icon/menu.svg" alt="" srcset="">
+            <a class="md:hidden" href="/index.html">
+              <img id="nav-menu" class="block md:hidden" src="/assets/Icon/inventory_2.svg" alt="" srcset="">
+            </a>
             <div
-              class="bg-[#0D6EFD] w-[38px] h-[40px] rounded-[7px] flex justify-center items-center"
+              class="bg-[#0D6EFD] w-[38px] h-[40px] rounded-[7px] hidden md:flex justify-center items-center"
             >
               <img src="/assets/Icon/logo.svg" alt="" srcset="" />
             </div>
-            <a href="" class="text-[#8CB7F5] font-extrabold text-[17px]">
+            <a href="" class="text-[#8CB7F5] font-extrabold text-[17px] hidden md:block">
               SALMAN
+            </a>
+            <a href="" class=" text-[13px] font-semibold md:hidden">
+              Mobile Accesories
             </a>
           </div>
           <div class="p-0 m-0 md:flex w-[60%] hidden">
@@ -84,7 +89,7 @@
           </button>
         </div>
         <div
-          class="nav-two h-[50px] flex justify-center items-center px-1 md:px-5"
+          class="nav-two h-[50px] hidden md:flex justify-center items-center px-1 md:px-5"
         >
           <ul
             class="flex gap-3 md:gap-5 md:text-[19px] text-[12px] justify-center md:justify-start w-full lg:w-[70%] h-full items-center"
@@ -115,135 +120,194 @@
           </div>
         </div>
       </header>
-      <div class="nav-bar fixed top-0 left-0 bg-amber-300 w-screen hidden h-screen mx-auto">hi this is me ssalnman</div>
-        
+      <div class="nav-bar fixed top-0 left-0 w-screen hidden h-screen mx-auto">hi this is me ssalnman</div>    
       <!--------------------------------------- Main Section ---------------------->
       <div class="w-full">
-        <div class="text-gray-500 w-full h-[50px] flex items-center pl-3.5">
+        <div class="text-gray-500 w-full h-[50px] hidden md:flex items-center pl-3.5">
             Home > Clothing > Men Clothes > Summer Clothes
         </div>
+        <div class="w-full h-[50px] hidden md:flex items-center bg-white justify-between px-3 mb-2.5">
+          <p class="hidden md:block"> 11,520 items in <span class="font-bold">Mobile Accesories</span></p>
+          <div class="flex gap-2 items-center justify-between w-full sm:w-[250px] sm:justify-center">
+            <div class="flex gap-0.5">
+              <input type="checkbox">
+              <p>Verified</p>
+            </div>
+              <select class="w-[130px] border-[#606060] rounded-[2px] border-[1px]" name="" id="">
+                  <option value="">Featured</option>
+              </select>
+              <div class="flex"> 
+                <img src="/assets/Icon/heart.svg" alt="" srcset="">  
+                <img src="/assets/Icon/heart.svg" alt="" srcset="">
+              </div>
+          </div>
+      </div>
         <div class="w-full flex">
-            <div class="w-[25%] bg-fuchsia-500">thi sis one</div>
-            <div class="w-[75%] flex flex-col gap-3.5">
-                <div class="w-full h-[50px] flex items-center justify-between px-3">
-                    <p>11,520 items in <span class="font-bold">Mobile Accesories</span></p>
-                    <div class="flex gap-2 items-center">
-                        <input type="checkbox">
-                        <p>Verified</p>
-                        <select class="w-[130px] border-[#606060] rounded-[2px] border-[1px]" name="" id="">
-                            <option value="">Featured</option>
-                        </select>
-                        <img src="/assets/Icon/heart.svg" alt="" srcset="">
-                        <img src="/assets/Icon/heart.svg" alt="" srcset="">
-                    </div>
-                </div>
+            <div class="w-[25%] hidden md:flex flex-col justify-center items-center gap-1.5">
+              <div class="w-[90%] h-[250px] border-t-[1px] border-gray-200 py-2">
+                <ul class="h-full flex flex-col justify-between">
+                  <li class="font-bold">Category</li>
+                  <li>Mobile Accesories</li>
+                  <li>Electronics</li>
+                  <li>Smart Phone</li>
+                  <li>Modern Tech</li>
+                  <li class="text-blue-500">See all</li>
+                </ul>
+              </div>
+            
+              <div class="w-[90%] h-[250px] border-t-[1px] border-gray-200 py-2">
+                <ul class="h-full flex flex-col justify-between">
+                  <li class="font-bold">Brands</li>
+                  <li class="flex gap-2"><input type="checkbox">Mobile Accesories</li>
+                  <li class="flex gap-2"><input type="checkbox">Electronics</li>
+                  <li class="flex gap-2"><input type="checkbox">Smart Phone</li>
+                  <li class="flex gap-2"><input type="checkbox">Modern Tech</li>
+                  <li class="text-blue-500">See all</li>
+                </ul>
+              </div>
+              <div class="w-[90%] h-[250px] border-t-[1px] border-gray-200 py-2">
+                <ul class="h-full flex flex-col justify-between">
+                  <li class="font-bold">Features</li>
+                  <li class="flex gap-2"><input type="checkbox">Mobile Accesories</li>
+                  <li class="flex gap-2"><input type="checkbox">Electronics</li>
+                  <li class="flex gap-2"><input type="checkbox">Smart Phone</li>
+                  <li class="flex gap-2"><input type="checkbox">Modern Tech</li>
+                  <li class="text-blue-500">See all</li>
+                </ul>
+              </div>
+              <div class="w-[90%] h-[250px] border-t-[1px] border-gray-200 py-2">
+                <ul class="h-full flex flex-col justify-between">
+                  <li class="font-bold">Conditions</li>
+                  <li class="flex gap-2"><input type="radio" name="Conditions">Mobile Accesories</li>
+                  <li class="flex gap-2"><input type="radio" name="Conditions">Electronics</li>
+                  <li class="flex gap-2"><input type="radio" name="Conditions">Smart Phone</li>
+                  <li class="flex gap-2"><input type="radio" name="Conditions">Modern Tech</li>
+                  <li class="text-blue-500">See all</li>
+                </ul>
+              </div>
+              
+            </div>
+            <div class="w-full md:w-[75%] flex flex-col gap-3.5">
+                
                 <div class="w-full flex flex-col gap-1.5">
                     <div class="w-full min-h-[150px] bg-white flex items-center relative">
                         <img class="h-full" src="/assets/tech/7.png" alt="" srcset="">
-                        <div class="text-[10px] h-full py-3 font-semibold flex flex-col justify-center w-[400px]">
+                        <div class="text-[10px] md:text-[13px] h-full py-3 font-semibold flex flex-col justify-center w-[400px]">
                             <p>Canon Camera EOS 2000, Black 10x zoom</p>
                             <p class="font-bold text-[13px]">$998.00 <span class="font-semibold line-through text-[10px]">@1128.00</span></p>
-                            <div class="flex gap-2">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
+                            <div class="flex gap-0.5 md:gap-2 flex-col sm:flex-row">
+                              <div class="flex">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                              </div>
                                 <p class="text-orange-500">7.5</p>
                                 <p class="text-[#606060]">154 orders</p>
                                 <p class="text-green-400">Free Shipping</p>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, itaque aliquid quibusdam eveniet sit molestias distinctio ex consequatur illo vitae excepturi alias rem minus cum, magni provident praesentium iste velit.</p>
+                            <p class="hidden sm:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, itaque aliquid quibusdam eveniet sit molestias distinctio ex consequatur illo vitae excepturi alias rem minus cum, magni provident praesentium iste velit.</p>
                             <a class="text-blue-600" href="#">View Details</a>
-                            <img class="h-[20px] absolute top-4 right-4" src="/assets/Icon/heart.svg" alt="">
+                            <img class="h-[20px] absolute hidden md:block top-4 right-4" src="/assets/Icon/heart.svg" alt="">
                         </div>
                     </div>
                     <div class="w-full min-h-[150px] bg-white flex items-center relative">
                         <img class="h-full" src="/assets/tech/8.png" alt="" srcset="">
-                        <div class="text-[10px] h-full py-3 font-semibold flex flex-col justify-center w-[400px]">
+                        <div class="text-[10px] md:text-[13px] h-full py-3 font-semibold flex flex-col justify-center w-[400px]">
                             <p>Canon Camera EOS 2000, Black 10x zoom</p>
                             <p class="font-bold text-[13px]">$998.00 <span class="font-semibold line-through text-[10px]">@1128.00</span></p>
-                            <div class="flex gap-2">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
+                            <div class="flex gap-0.5 md:gap-2 flex-col sm:flex-row">
+                              <div class="flex">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                              </div>
                                 <p class="text-orange-500">7.5</p>
                                 <p class="text-[#606060]">154 orders</p>
                                 <p class="text-green-400">Free Shipping</p>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, itaque aliquid quibusdam eveniet sit molestias distinctio ex consequatur illo vitae excepturi alias rem minus cum, magni provident praesentium iste velit.</p>
+                            <p class="hidden sm:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, itaque aliquid quibusdam eveniet sit molestias distinctio ex consequatur illo vitae excepturi alias rem minus cum, magni provident praesentium iste velit.</p>
                             <a class="text-blue-600" href="#">View Details</a>
-                            <img class="h-[20px] absolute top-4 right-4" src="/assets/Icon/heart.svg" alt="">
+                            <img class="h-[20px] absolute hidden md:block top-4 right-4" src="/assets/Icon/heart.svg" alt="">
                         </div>
                     </div>
                     <div class="w-full min-h-[150px] bg-white flex items-center relative">
                         <img class="h-full" src="/assets/tech/5.png" alt="" srcset="">
-                        <div class="text-[10px] h-full py-3 font-semibold flex flex-col justify-center w-[400px]">
+                        <div class="text-[10px] md:text-[13px] h-full py-3 font-semibold flex flex-col justify-center w-[400px]">
                             <p>Canon Camera EOS 2000, Black 10x zoom</p>
                             <p class="font-bold text-[13px]">$998.00 <span class="font-semibold line-through text-[10px]">@1128.00</span></p>
-                            <div class="flex gap-2">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
+                            <div class="flex gap-0.5 md:gap-2 flex-col sm:flex-row">
+                              <div class="flex">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                              </div>
                                 <p class="text-orange-500">7.5</p>
                                 <p class="text-[#606060]">154 orders</p>
                                 <p class="text-green-400">Free Shipping</p>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, itaque aliquid quibusdam eveniet sit molestias distinctio ex consequatur illo vitae excepturi alias rem minus cum, magni provident praesentium iste velit.</p>
+                            <p class="hidden sm:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, itaque aliquid quibusdam eveniet sit molestias distinctio ex consequatur illo vitae excepturi alias rem minus cum, magni provident praesentium iste velit.</p>
                             <a class="text-blue-600" href="#">View Details</a>
-                            <img class="h-[20px] absolute top-4 right-4" src="/assets/Icon/heart.svg" alt="">
+                            <img class="h-[20px] absolute hidden md:block top-4 right-4" src="/assets/Icon/heart.svg" alt="">
                         </div>
                     </div>
                     <div class="w-full min-h-[150px] bg-white flex items-center relative">
                         <img class="h-full" src="/assets/tech/3.png" alt="" srcset="">
-                        <div class="text-[10px] h-full py-3 font-semibold flex flex-col justify-center w-[400px]">
+                        <div class="text-[10px] md:text-[13px] h-full py-3 font-semibold flex flex-col justify-center w-[400px]">
                             <p>Canon Camera EOS 2000, Black 10x zoom</p>
                             <p class="font-bold text-[13px]">$998.00 <span class="font-semibold line-through text-[10px]">@1128.00</span></p>
-                            <div class="flex gap-2">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
+                            <div class="flex gap-0.5 md:gap-2 flex-col sm:flex-row">
+                              <div class="flex">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                              </div>
                                 <p class="text-orange-500">7.5</p>
                                 <p class="text-[#606060]">154 orders</p>
                                 <p class="text-green-400">Free Shipping</p>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, itaque aliquid quibusdam eveniet sit molestias distinctio ex consequatur illo vitae excepturi alias rem minus cum, magni provident praesentium iste velit.</p>
+                            <p class="hidden sm:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, itaque aliquid quibusdam eveniet sit molestias distinctio ex consequatur illo vitae excepturi alias rem minus cum, magni provident praesentium iste velit.</p>
                             <a class="text-blue-600" href="#">View Details</a>
-                            <img class="h-[20px] absolute top-4 right-4" src="/assets/Icon/heart.svg" alt="">
+                            <img class="h-[20px] absolute hidden md:block top-4 right-4" src="/assets/Icon/heart.svg" alt="">
                         </div>
                     </div>
                     <div class="w-full min-h-[150px] bg-white flex items-center relative">
                         <img class="h-full" src="/assets/tech/6.png" alt="" srcset="">
-                        <div class="text-[10px] h-full py-3 font-semibold flex flex-col justify-center w-[400px]">
+                        <div class="text-[10px] h-full md:text-[13px] py-3 font-semibold flex flex-col justify-center w-[400px]">
                             <p>Canon Camera EOS 2000, Black 10x zoom</p>
                             <p class="font-bold text-[13px]">$998.00 <span class="font-semibold line-through text-[10px]">@1128.00</span></p>
-                            <div class="flex gap-2">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
+                            <div class="flex gap-0.5 md:gap-2 flex-col sm:flex-row">
+                              <div class="flex">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                              </div>
                                 <p class="text-orange-500">7.5</p>
                                 <p class="text-[#606060]">154 orders</p>
                                 <p class="text-green-400">Free Shipping</p>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, itaque aliquid quibusdam eveniet sit molestias distinctio ex consequatur illo vitae excepturi alias rem minus cum, magni provident praesentium iste velit.</p>
+                            <p class="hidden sm:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, itaque aliquid quibusdam eveniet sit molestias distinctio ex consequatur illo vitae excepturi alias rem minus cum, magni provident praesentium iste velit.</p>
                             <a class="text-blue-600" href="#">View Details</a>
-                            <img class="h-[20px] absolute top-4 right-4" src="/assets/Icon/heart.svg" alt="">
+                            <img class="h-[20px] absolute hidden md:block top-4 right-4" src="/assets/Icon/heart.svg" alt="">
                         </div>
                     </div>
                     <div class="w-full min-h-[150px] bg-white flex items-center relative">
                         <img class="h-full" src="/assets/tech/8.png" alt="" srcset="">
-                        <div class="text-[10px] h-full py-3 font-semibold flex flex-col justify-center w-[400px]">
+                        <div class="text-[10px] md:text-[13px] h-full py-3 font-semibold flex flex-col justify-center w-[400px]">
                             <p>Canon Camera EOS 2000, Black 10x zoom</p>
                             <p class="font-bold text-[13px]">$998.00 <span class="font-semibold line-through text-[10px]">@1128.00</span></p>
-                            <div class="flex gap-2">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
-                                <img src="/assets/Icon/heart.svg" alt="" srcset="">
+                            <div class="flex gap-0.5 md:gap-2 flex-col sm:flex-row">
+                              <div class="flex">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                                <img class="w-[20px]" src="/assets/Icon/heart.svg" alt="" srcset="">
+                              </div>
                                 <p class="text-orange-500">7.5</p>
                                 <p class="text-[#606060]">154 orders</p>
                                 <p class="text-green-400">Free Shipping</p>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, itaque aliquid quibusdam eveniet sit molestias distinctio ex consequatur illo vitae excepturi alias rem minus cum, magni provident praesentium iste velit.</p>
+                            <p class="hidden sm:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, itaque aliquid quibusdam eveniet sit molestias distinctio ex consequatur illo vitae excepturi alias rem minus cum, magni provident praesentium iste velit.</p>
                             <a class="text-blue-600" href="#">View Details</a>
-                            <img class="h-[20px] absolute top-4 right-4" src="/assets/Icon/heart.svg" alt="">
+                            <img class="h-[20px] absolute hidden md:block top-4 right-4" src="/assets/Icon/heart.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -291,17 +355,17 @@
               </a>
             </div>
             <p class="text-[#505050] text-[12px] w-[70%]">
-              Best information about the company gies here but now lorem ipsum
+              Best information about the company gies here but now class="hidden md:block" lorem ipsum
               is
             </p>
             <div
               class="w-full h-[40px] flex md:justify-center items-center gap-2"
             >
-              <img src="/assets/Icon/Fill 183.svg" alt="" />
-              <img src="/assets/Icon/Fill 184.svg" alt="" />
-              <img src="/assets/Icon/Fill 209.svg" alt="" />
-              <img src="/assets/Icon/Combined Shape.svg" alt="" />
-              <img src="/assets/Icon/Combined Shape1.svg" alt="" />
+              <img class="w-[20px]" src="/assets/Icon/Fill 183.svg" alt="" />
+              <img class="w-[20px]" src="/assets/Icon/Fill 184.svg" alt="" />
+              <img class="w-[20px]" src="/assets/Icon/Fill 209.svg" alt="" />
+              <img class="w-[20px]" src="/assets/Icon/Combined Shape.svg" alt="" />
+              <img class="w-[20px]" src="/assets/Icon/Combined Shape1.svg" alt="" />
             </div>
           </div>
           <div class="h-full flex flex-grow items-center justify-between px-5">
