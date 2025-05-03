@@ -66,12 +66,18 @@
               id=""
             >
               <option value="">All categoris</option>
+              <option value="">Clothes and Garments</option>
+              <option value="">Tech</option>
+              <option value="">Kitchen Gadgets</option>
+              <option value="">Grocessries</option>
             </select>
-            <button
-              class="w-[70px] h-[45px] rounded-tr-[5px] text-white rounded-br-[5px] bg-blue-500 hover:bg-blue-400 duration-100"
-            >
+            <a href="/category.html">
+              <button
+              class="w-[70px] h-[45px] cursor-pointer rounded-tr-[5px] text-white rounded-br-[5px] bg-blue-500 hover:bg-blue-400 duration-100"
+              >
               Search
             </button>
+          </a>
           </div>
           <div class="h-[41px] flex gap-6.5 md:gap-2.5 w-[20%]">
             <div
@@ -120,7 +126,9 @@
             class="flex gap-3 md:gap-5 md:text-[19px] text-[12px] justify-center md:justify-start w-full md:w-[70%] h-full items-center"
           >
             <li class="flex items-center gap-1">
-              <img src="/assets/Icon/menu.svg" alt="" />
+              <a href="/category.html">
+                <img src="/assets/Icon/menu.svg" alt="" />
+              </a>
               All category
             </li>
             <li>Hot Offers</li>
@@ -193,12 +201,12 @@
               <a class="text-[16px]" href="">Hi, user lets get stated</a>
             </div>
             <button
-              class="h-[30%] bg-[#127FFF] w-full text-[13px] text-white font-medium rounded-[5px] hover:scale-105 hover:bg-blue-400"
+              class="h-[30%] bg-[#127FFF] w-full text-[13px] cursor-pointer text-white font-medium rounded-[5px] hover:scale-105 hover:bg-blue-400"
             >
               Join Now
             </button>
             <button
-              class="h-[30%] text-[#127FFF] bg-white text-[13px] font-medium w-full rounded-[5px] hover:scale-105 hover:bg-gray-300"
+              class="h-[30%] text-[#127FFF] bg-white cursor-pointer text-[13px] font-medium w-full rounded-[5px] hover:scale-105 hover:bg-gray-300"
             >
               Login In
             </button>
@@ -342,7 +350,7 @@
               Outdoor
             </h3>
             <button
-              class="bg-white w-[100px] h-[35px] text-[16px] font-medium rounded-[5px] mt-2.5 hover:bg-[#127FFF] duration-150 hover:scale-105"
+              class="bg-white cursor-pointer w-[100px] h-[35px] text-[16px] font-medium rounded-[5px] mt-2.5 hover:bg-[#127FFF] duration-150 hover:scale-105"
             >
               Learn More
             </button>
@@ -533,7 +541,7 @@
               Electronics and Gadgets
             </h3>
             <button
-              class="bg-white w-[100px] h-[35px] text-[16px] font-medium rounded-[5px] mt-2.5 hover:bg-[#127FFF] duration-150 hover:scale-105"
+              class="bg-white cursor-pointer w-[100px] h-[35px] text-[16px] font-medium rounded-[5px] mt-2.5 hover:bg-[#127FFF] duration-150 hover:scale-105"
             >
               Learn More
             </button>
@@ -750,7 +758,7 @@
                   </select>
                 </div>
                 <button
-                  class="w-[130px] h-[40px] text-[16px] font-medium bg-[#127FFF] text-white rounded-[5px]"
+                  class="w-[130px] cursor-pointer h-[40px] text-[16px] font-medium bg-[#127FFF] text-white rounded-[5px]"
                 >
                   Send Inquiry
                 </button>
@@ -764,29 +772,32 @@
         <h3 class="text-[24px] font-semibold">Recommendation</h3>
         <div class="w-full h-full grid grid-cols-2 lg:grid-cols-5 gap-5">
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
+            class="flex flex-col items-center text-center cursor-pointer rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
-            <img src="/assets/cloth/1.png" alt="" srcset="" />
+          <a href="/details.html">
+
+            <img src="/assets/cloth/shirt5.png" alt="" srcset="" />
             <div class="flex flex-col">
               <a class="text-[16px] font-medium" href="">$10.30</a>
               <a class="text-[12px] text-[#8B96A5]" href=""
-                >Tshirt with multiple color for men</a
+              >Long Sleves with multiple color for men</a
               >
             </div>
+          </a>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
+            class="flex flex-col items-center text-center cursor-pointer rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
             <img src="/assets/cloth/3.png" alt="" srcset="" />
             <div class="flex flex-col">
               <a class="text-[16px] font-medium" href="">$10.30</a>
               <a class="text-[12px] text-[#8B96A5]" href=""
-                >Blue lather jackets for men</a
+                >Brown lather jackets for men</a
               >
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
+            class="flex flex-col items-center text-center rounded-[5px] cursor-pointer p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
             <img src="/assets/cloth/7.png" alt="" srcset="" />
             <div class="flex flex-col">
@@ -797,7 +808,7 @@
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
+            class="flex flex-col items-center text-center rounded-[5px] p-1.5 w-full cursor-pointer bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
             <img src="/assets/cloth/6.png" alt="" srcset="" />
             <div class="flex flex-col">
@@ -806,16 +817,16 @@
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
+            class="flex flex-col items-center text-center rounded-[5px] p-1.5 w-full bg-[#FFFFFF] cursor-pointer border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
-            <img src="/assets/cloth/5.png" alt="" srcset="" />
+            <img src="/assets/cloth/1.png" alt="" srcset="" />
             <div class="flex flex-col">
               <a class="text-[16px] font-medium" href="">$90.00</a>
-              <a class="text-[12px] text-[#8B96A5]" href="">Blue Bag</a>
+              <a class="text-[12px] text-[#8B96A5]" href="">Summer Tshirt for men</a>
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
+            class="flex flex-col items-center text-center rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] cursor-pointer border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
             <img src="/assets/cloth/4.png" alt="" srcset="" />
             <div class="flex flex-col">
@@ -824,42 +835,42 @@
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
+            class="flex flex-col items-center text-center rounded-[5px] p-1.5 w-full bg-[#FFFFFF] cursor-pointer border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
-            <img src="/assets/tech/5.png" alt="" srcset="" />
+            <img src="/assets/cloth/5.png" alt="" srcset="" />
             <div class="flex flex-col">
               <a class="text-[16px] font-medium" href="">$150.00</a>
               <a class="text-[12px] text-[#8B96A5]" href=""
-                >Gamming Headsets for Gammers</a
+                >Bag for men and women</a
               >
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
+            class="flex flex-col items-center text-center rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] cursor-pointer border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
-            <img src="/assets/tech/6.png" alt="" srcset="" />
+            <img src="/assets/cloth/3.png" alt="" srcset="" />
             <div class="flex flex-col">
               <a class="text-[16px] font-medium" href="">$400.00</a>
-              <a class="text-[12px] text-[#8B96A5]" href="">Cannot Camera</a>
+              <a class="text-[12px] text-[#8B96A5]" href="">Brown Lather Jacket</a>
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
+            class="h-[230px] rounded-[5px] p-1.5 cursor-pointer w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
-            <img src="/assets/tech/3.png" alt="" srcset="" />
+            <img src="/assets/cloth/1.png" alt="" srcset="" />
             <div class="flex flex-col">
               <a class="text-[16px] font-medium" href="">$149.99</a>
-              <a class="text-[12px] text-[#8B96A5]" href="">Vivo Y30 pro</a>
+              <a class="text-[12px] text-[#8B96A5]" href="">Polo Tshirt for men</a>
             </div>
           </div>
           <div
-            class="h-[230px] rounded-[5px] p-1.5 w-full bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
+            class="h-[230px] rounded-[5px] p-1.5 w-full cursor-pointer bg-[#FFFFFF] border-[2px] border-[#8b96a52d] hover:scale-105 duration-[0.5s]"
           >
-            <img src="/assets/tech/7.png" alt="" srcset="" />
+            <img src="/assets/cloth/7.png" alt="" srcset="" />
             <div class="flex flex-col">
               <a class="text-[16px] font-medium" href="">$799.99</a>
               <a class="text-[12px] text-[#8B96A5]" href=""
-                >Asus Gaming Laptop</a
+                >jacket for Men blue Lather</a
               >
             </div>
           </div>
@@ -1063,7 +1074,7 @@
             class="bg-white h-[25px] w-[200px] rounded-[5px] placeholder:pl-2.5 placeholder:text-[#606060]"
           />
           <button
-            class="text-white bg-[#127FFF] rounded-[3px] h-[25px] w-[80px] text-[10px] font-semibold"
+            class="text-white cursor-pointer bg-[#127FFF] rounded-[3px] h-[25px] w-[80px] text-[10px] font-semibold"
           >
             Subscribe
           </button>
