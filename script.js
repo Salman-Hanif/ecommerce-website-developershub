@@ -28,3 +28,4 @@ let navBar = document.getElementsByClassName('nav-bar')
 icon.addEventListener("click",()=>{
     navBar.classList.remove('hidden')
 })
+
