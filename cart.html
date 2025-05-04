@@ -1,493 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart</title>
-    <link rel="stylesheet" href="/src/output.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart</title>
+  <link rel="stylesheet" href="/src/output.css" />
+</head>
+
+<body>
+  <div class="wrapper bg-[#F7FAFC] w-[90%] flex flex-col gap-3 rounded-[5px] overflow-hidden mx-auto">
     <div
-      class="wrapper bg-[#F7FAFC] w-[90%] flex flex-col gap-3 rounded-[5px] overflow-hidden mx-auto"
-    >
-    <div class="bg-white hidden successmessage flex-col fixed top-0 left-0 w-screen h-screen z-50 items-center justify-center">
-      <img class="absolute bottom-0 h-full" src="/assets/congratulations-7600_512.gif" alt="">
+      class="bg-white hidden successmessage flex-col fixed top-0 left-0 w-screen h-screen z-50 items-center justify-center">
+      <img class="absolute bottom-0 w-full h-full" src="/assets/congratulations-7600_512.gif" alt="">
       <div class="w-full flex items-center gap-1 sm:gap-4 justify-center flex-col h-[400px] relative">
         <h2 class="text-4xl sm:text-7xl font-bold">Congratulations</h2>
         <h4 class="text-[15px] sm:text-2xl font-light text-gray-500">Order Successfully Placed</h4>
-        <a href="/index.html">  
-          <button class="bg-blue-500 backButton cursor-pointer text-white px-5 py-2 rounded-[5px] font-semibold text-[15px]">Back to Shop</button>
+        <a href="/index.html">
+          <button
+            class="bg-blue-500 backButton cursor-pointer text-white px-5 py-2 rounded-[5px] font-semibold text-[15px]">Back
+            to Shop</button>
         </a>
       </div>
     </div>
-      <!--------------------------- Header Section  --------------------------->
-      <header>
-        <nav
-          class="w-full md:h-[86px] h-[50px] py-8 px-5 flex justify-between bg-white items-center gap-7 border-b-[2px] border-b-[#8b96a52d]"
-        >
-          <div class="md:w-[30%] w-full h-[46px] flex items-center gap-1.5">
-            <a class="md:hidden" href="/details.html">
-              <img
-                id="nav-menu"
-                class="block md:hidden"
-                src="/assets/Icon/back.svg"
-                alt=""
-                srcset=""
-              />
-            </a>
-            <div
-              class="bg-[#0D6EFD] w-[38px] h-[40px] rounded-[7px] hidden md:flex justify-center items-center"
-            >
-              <img src="/assets/Icon/logo.svg" alt="" srcset="" />
-            </div>
-            <a
-              href=""
-              class="text-[#8CB7F5] font-extrabold text-[17px] hidden md:block"
-            >
-              SALMAN
-            </a>
-            <a href="" class="text-[18px] font-semibold md:hidden">
-              Shopping Cart
-            </a>
+    <!--------------------------- Header Section  --------------------------->
+    <header>
+      <nav
+        class="w-full md:h-[86px] h-[50px] py-8 px-5 flex justify-between bg-white items-center gap-7 border-b-[2px] border-b-[#8b96a52d]">
+        <div class="md:w-[30%] w-full h-[46px] flex items-center gap-1.5">
+          <a class="md:hidden" href="/details.html">
+            <img id="nav-menu" class="block md:hidden" src="/assets/Icon/back.svg" alt="" srcset="" />
+          </a>
+          <div class="bg-[#0D6EFD] w-[38px] h-[40px] rounded-[7px] hidden md:flex justify-center items-center">
+            <img src="/assets/Icon/logo.svg" alt="" srcset="" />
           </div>
+          <a href="" class="text-[#8CB7F5] font-extrabold text-[17px] hidden md:block">
+            SALMAN
+          </a>
+          <a href="" class="text-[18px] font-semibold md:hidden">
+            Shopping Cart
+          </a>
+        </div>
 
-          <div class="h-[41px] hidden md:flex gap-6.5 md:gap-2.5 w-[15%]">
-            <div
-              class="w-[25%] h-[40px] flex flex-col justify-center items-center hover:scale-105"
-            >
-              <img src="/assets/Icon/profile.svg" alt="" />
-              <a class="text-[#8B96A5] text-[12px]" href="">profile</a>
-            </div>
-            <div
-              class="w-[25%] h-[40px] hidden md:flex flex-col justify-center items-center hover:scale-105"
-            >
-              <img src="/assets/Icon/message.svg" alt="" />
-              <a class="text-[#8B96A5] text-[12px]" href="">message</a>
-            </div>
-            <div
-              class="w-[25%] h-[40px] hidden md:flex flex-col justify-center items-center hover:scale-105"
-            >
-              <img src="/assets/Icon/heart.svg" alt="" />
-              <a class="text-[#8B96A5] text-[12px]" href="">orders</a>
-            </div>
-            <div
-              class="w-[25%] h-[40px] flex flex-col justify-center items-center hover:scale-105"
-            >
-              <img src="/assets/Icon/Vector.svg" alt="" />
-              <a class="text-[#8B96A5] text-[12px]" href="">cart</a>
-            </div>
+        <div class="h-[41px] hidden md:flex gap-6.5 md:gap-2.5 w-[15%]">
+          <div class="w-[25%] h-[40px] flex flex-col justify-center items-center hover:scale-105">
+            <img src="/assets/Icon/profile.svg" alt="" />
+            <a class="text-[#8B96A5] text-[12px]" href="">profile</a>
           </div>
-        </nav>
-      </header>
-      <!------------------------------------- Main Secion  ---------------------------->
-      <div class="w-full flex flex-col gap-1.5">
-        <h2 class="font-bold text-2xl">My Cart (3)</h2>
-        <div class="w-full flex gap-2.5 flex-col lg:flex-row">
+          <div class="w-[25%] h-[40px] hidden md:flex flex-col justify-center items-center hover:scale-105">
+            <img src="/assets/Icon/message.svg" alt="" />
+            <a class="text-[#8B96A5] text-[12px]" href="">message</a>
+          </div>
+          <div class="w-[25%] h-[40px] hidden md:flex flex-col justify-center items-center hover:scale-105">
+            <img src="/assets/Icon/heart.svg" alt="" />
+            <a class="text-[#8B96A5] text-[12px]" href="">orders</a>
+          </div>
+          <div class="w-[25%] h-[40px] flex flex-col justify-center items-center hover:scale-105">
+            <img src="/assets/Icon/Vector.svg" alt="" />
+            <a class="text-[#8B96A5] text-[12px]" href="">cart</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!------------------------------------- Main Secion  ---------------------------->
+    <div class="w-full flex flex-col gap-1.5">
+      <h2 class="font-bold text-2xl">My Cart (3)</h2>
+      <div class="w-full flex gap-2.5 flex-col lg:flex-row">
+        <div
+          class="w-full lg:w-[75%] bg-white px-3 flex flex-col gap-4 py-3.5 border-[1px] border-gray-300 rounded-3px">
           <div
-            class="w-full lg:w-[75%] bg-white px-3 flex flex-col gap-4 py-3.5 border-[1px] border-gray-300 rounded-3px"
-          >
-
-
-
-
-
-
-
-
-
-
-            <div
-              class="w-full bag py-2.5 justify-between border-b-[1px] border-gray-300 flex flex-col md:flex-row gap-2.5"
-            >
-
-
-
-
-
-              <div class="flex gap-3.5">
-                <img
-                  class="h-[100px] border-[1px] border-gray-300 rounded-[5px] w-[100px]"
-                  src="/assets/cloth/8.png"
-                  alt=""
-                />
-                <div class="h-full flex flex-col gap-1">
-                  <p class="font-semibold text-[15px] lg:text-[20px]">
-                    Bags for Men and Women
-                  </p>
-                  <p class="text-gray-500 text-[10px] lg:text-[15px]">
-                    Size: Medium, Color: Blue, Material: Plastic
-                  </p>
-                  <p class="text-gray-500 text-[15px]">Seller: Escorters.LLC</p>
-                  <div class="flex gap-3.5">
-                    <button
-                      class="w-[70px] bagbutton md:w-[100px] rounded-[5px] text-[10px] cursor-pointer md:text-[14px] text-red-600 font-semibold h-[30px] border-[1px] border-gray-300"
-                    >
-                      Remove
-                    </button>
-                    <button
-                      class="w-[100px] md:w-[130px] rounded-[5px] text-[12px] cursor-pointer md:text-[14px] text-blue-600 font-semibold h-[30px] border-[1px] border-gray-300"
-                    >
-                      Save for Later
-                    </button>
-                  </div>
+            class="w-full bag py-2.5 justify-between border-b-[1px] border-gray-300 flex flex-col md:flex-row gap-2.5">
+            <div class="flex gap-3.5">
+              <img class="h-[100px] border-[1px] border-gray-300 rounded-[5px] w-[100px]" src="/assets/cloth/8.png"
+                alt="" />
+              <div class="h-full flex flex-col gap-1">
+                <p class="font-semibold text-[15px] lg:text-[20px]">
+                  Bags for Men and Women
+                </p>
+                <p class="text-gray-500 text-[10px] lg:text-[15px]">
+                  Size: Medium, Color: Blue, Material: Plastic
+                </p>
+                <p class="text-gray-500 text-[15px]">Seller: Escorters.LLC</p>
+                <div class="flex gap-3.5">
+                  <button
+                    class="w-[70px] bagbutton md:w-[100px] rounded-[5px] text-[10px] cursor-pointer md:text-[14px] text-red-600 font-semibold h-[30px] border-[1px] border-gray-300">
+                    Remove
+                  </button>
+                  <button
+                    class="w-[100px] md:w-[130px] rounded-[5px] text-[12px] cursor-pointer md:text-[14px] text-blue-600 font-semibold h-[30px] border-[1px] border-gray-300">
+                    Save for Later
+                  </button>
                 </div>
-              </div>    
-
-
-
-
-              <div class=" h-full flex justify-between md:justify-start md:flex-col gap-2 px-1.5">
-                <p class="font-semibold text-[16px]">$78.99</p>
-                <select class="px-2 w-22 rounded-[3px] py-0.5 border-[1px] border-gray-300" name="" id="">
-                  <option class="" value="">Qty: 9</option>
-                </select>
               </div>
             </div>
-            <div
-              class="w-full wallet py-2.5 justify-between border-b-[1px] border-gray-300 flex flex-col md:flex-row gap-2.5"
-            >
-
-
-
-
-
-              <div class="flex gap-3.5">
-                <img
-                  class="h-[100px] border-[1px] border-gray-300 rounded-[5px] w-[100px]"
-                  src="/assets/cloth/6.png"
-                  alt=""
-                />
-                <div class="h-full flex flex-col gap-1">
-                  <p class="font-semibold text-[15px] lg:text-[20px]">
-                    Wallet for Men in multiple colors
-                  </p>
-                  <p class="text-gray-500 text-[10px] lg:text-[15px]">
-                    Size: Medium, Color: Blue, Material: Plastic
-                  </p>
-                  <p class="text-gray-500 text-[15px]">Seller: Escorters.LLC</p>
-                  <div class="flex gap-3.5">
-                    <button
-                      class="w-[70px] walletbutton md:w-[100px] cursor-pointer rounded-[5px] text-[10px] md:text-[14px] text-red-600 font-semibold h-[30px] border-[1px] border-gray-300"
-                    >
-                      Remove
-                    </button>
-                    <button
-                      class="w-[100px] md:w-[130px] cursor-pointer rounded-[5px] text-[12px] md:text-[14px] text-blue-600 font-semibold h-[30px] border-[1px] border-gray-300"
-                    >
-                      Save for Later
-                    </button>
-                  </div>
+            <div class=" h-full flex justify-between md:justify-start md:flex-col gap-2 px-1.5">
+              <p class="font-semibold text-[16px]">$78.99</p>
+              <select class="px-2 w-22 rounded-[3px] py-0.5 border-[1px] border-gray-300" name="" id="">
+                <option class="" value="">Qty: 9</option>
+              </select>
+            </div>
+          </div>
+          <div
+            class="w-full wallet py-2.5 justify-between border-b-[1px] border-gray-300 flex flex-col md:flex-row gap-2.5">
+            <div class="flex gap-3.5">
+              <img class="h-[100px] border-[1px] border-gray-300 rounded-[5px] w-[100px]" src="/assets/cloth/6.png"
+                alt="" />
+              <div class="h-full flex flex-col gap-1">
+                <p class="font-semibold text-[15px] lg:text-[20px]">
+                  Wallet for Men in multiple colors
+                </p>
+                <p class="text-gray-500 text-[10px] lg:text-[15px]">
+                  Size: Medium, Color: Blue, Material: Plastic
+                </p>
+                <p class="text-gray-500 text-[15px]">Seller: Escorters.LLC</p>
+                <div class="flex gap-3.5">
+                  <button
+                    class="w-[70px] walletbutton md:w-[100px] cursor-pointer rounded-[5px] text-[10px] md:text-[14px] text-red-600 font-semibold h-[30px] border-[1px] border-gray-300">
+                    Remove
+                  </button>
+                  <button
+                    class="w-[100px] md:w-[130px] cursor-pointer rounded-[5px] text-[12px] md:text-[14px] text-blue-600 font-semibold h-[30px] border-[1px] border-gray-300">
+                    Save for Later
+                  </button>
                 </div>
-              </div>    
-
-
-
-
-              <div class=" h-full flex justify-between md:justify-start md:flex-col gap-2 px-1.5">
-                <p class="font-semibold text-[16px]">$78.99</p>
-                <select class="px-2 w-22 rounded-[3px] py-0.5 border-[1px] border-gray-300" name="" id="">
-                  <option class="" value="">Qty: 9</option>
-                </select>
               </div>
             </div>
-            <div
-              class="w-full shirt py-2.5 justify-between border-b-[1px] border-gray-300 flex flex-col md:flex-row gap-2.5"
-            >
-
-
-
-
-
-              <div class="flex gap-3.5">
-                <img
-                  class="h-[100px] border-[1px] border-gray-300 rounded-[5px] w-[100px]"
-                  src="/assets/cloth/shirt5.png"
-                  alt=""
-                />
-                <div class="h-full flex flex-col gap-1">
-                  <p class="font-semibold text-[15px] lg:text-[20px]">
-                    Long Sleves T-Shirt for multiple colors for men
-                  </p>
-                  <p class="text-gray-500 text-[10px] lg:text-[15px]">
-                    Size: Medium, Color: Blue, Material: Plastic
-                  </p>
-                  <p class="text-gray-500 text-[15px]">Seller: Escorters.LLC</p>
-                  <div class="flex gap-3.5">
-                    <button
-                      class="w-[70px] shirtButton cursor-pointer md:w-[100px] rounded-[5px] text-[10px] md:text-[14px] text-red-600 font-semibold h-[30px] border-[1px] border-gray-300"
-                    >
-                      Remove
-                    </button>
-                    <button
-                      class="w-[100px] md:w-[130px] rounded-[5px] cursor-pointer text-[12px] md:text-[14px] text-blue-600 font-semibold h-[30px] border-[1px] border-gray-300"
-                    >
-                      Save for Later
-                    </button>
-                  </div>
+            <div class=" h-full flex justify-between md:justify-start md:flex-col gap-2 px-1.5">
+              <p class="font-semibold text-[16px]">$78.99</p>
+              <select class="px-2 w-22 rounded-[3px] py-0.5 border-[1px] border-gray-300" name="" id="">
+                <option class="" value="">Qty: 9</option>
+              </select>
+            </div>
+          </div>
+          <div
+            class="w-full shirt py-2.5 justify-between border-b-[1px] border-gray-300 flex flex-col md:flex-row gap-2.5">
+            <div class="flex gap-3.5">
+              <img class="h-[100px] border-[1px] border-gray-300 rounded-[5px] w-[100px]" src="/assets/cloth/shirt5.png"
+                alt="" />
+              <div class="h-full flex flex-col gap-1">
+                <p class="font-semibold text-[15px] lg:text-[20px]">
+                  Long Sleves T-Shirt for multiple colors for men
+                </p>
+                <p class="text-gray-500 text-[10px] lg:text-[15px]">
+                  Size: Medium, Color: Blue, Material: Plastic
+                </p>
+                <p class="text-gray-500 text-[15px]">Seller: Escorters.LLC</p>
+                <div class="flex gap-3.5">
+                  <button
+                    class="w-[70px] shirtButton cursor-pointer md:w-[100px] rounded-[5px] text-[10px] md:text-[14px] text-red-600 font-semibold h-[30px] border-[1px] border-gray-300">
+                    Remove
+                  </button>
+                  <button
+                    class="w-[100px] md:w-[130px] rounded-[5px] cursor-pointer text-[12px] md:text-[14px] text-blue-600 font-semibold h-[30px] border-[1px] border-gray-300">
+                    Save for Later
+                  </button>
                 </div>
-              </div>    
-
-
-
-
-              <div class=" h-full flex justify-between md:justify-start md:flex-col gap-2 px-1.5">
-                <p class="font-semibold text-[16px]">$78.99</p>
-                <select class="px-2 w-22 rounded-[3px] py-0.5 border-[1px] border-gray-300" name="" id="">
-                  <option class="" value="">Qty: 9</option>
-                </select>
               </div>
             </div>
-           
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-            <div class="w-full py-1.5 flex justify-between">
-              <button
-            class="w-[120px] rounded-[5px] text-[14px] cursor-pointer text-white bg-blue-600 font-semibold h-[35px] border-[1px] border-gray-300"
-            >
+            <div class=" h-full flex justify-between md:justify-start md:flex-col gap-2 px-1.5">
+              <p class="font-semibold text-[16px]">$78.99</p>
+              <select class="px-2 w-22 rounded-[3px] py-0.5 border-[1px] border-gray-300" name="" id="">
+                <option class="" value="">Qty: 9</option>
+              </select>
+            </div>
+          </div>
+          <div class="w-full py-1.5 flex justify-between">
+            <button
+              class="w-[120px] rounded-[5px] text-[14px] cursor-pointer text-white bg-blue-600 font-semibold h-[35px] border-[1px] border-gray-300">
               Back to Shop
             </button>
             <button
-              class="w-[110px] rounded-[5px] text-[14px] text-blue-600 font-semibold cursor-pointer h-[30px] border-[1px] border-gray-300"
-            >
+              class="w-[110px] rounded-[5px] text-[14px] text-blue-600 font-semibold cursor-pointer h-[30px] border-[1px] border-gray-300">
               Remove All
             </button>
+          </div>
+        </div>
+        <div class="w-full lg:w-[25%] lg:flex flex-col gap-4">
+          <div
+            class="bg-white w-full border-[1px] border-gray-300 rounded-[3px] gap-3 hidden lg:flex flex-col px-1.5 py-3">
+            <p>Have a Coupon?</p>
+            <div class="flex w-full">
+              <input class="border-[1px] w-[70%]  border-gray-300 py-1 px-2.5 rounded-bl-[3px] rounded-tl-[3px]"
+                type="text" placeholder="Add coupon">
+              <button
+                class="border-[1px] w-[30%] border-gray-300 py-1 px-2.5 rounded-br-[3px] font-semibold text-blue-600 rounded-tr-[3px]">Apply</button>
             </div>
           </div>
-          <div class="w-full lg:w-[25%] lg:flex flex-col gap-4">
-            <div class="bg-white w-full border-[1px] border-gray-300 rounded-[3px] gap-3 hidden lg:flex flex-col px-1.5 py-3">
-              <p>Have a Coupon?</p>
-              <div class="flex w-full">
-                <input class="border-[1px] w-[70%]  border-gray-300 py-1 px-2.5 rounded-bl-[3px] rounded-tl-[3px]" type="text" placeholder="Add coupon">
-                <button class="border-[1px] w-[30%] border-gray-300 py-1 px-2.5 rounded-br-[3px] font-semibold text-blue-600 rounded-tr-[3px]">Apply</button></div>
-            </div>
-            <div class="bg-white py-3 px-2.5 flex flex-col gap-3.5 w-full border-[1px] border-gray-300 rounded-[3px]">
-              <div class=" border-b-[1px] border-gray-300 flex pb-5 flex-col gap-1.5 text-[#505050]">
-                <div class="w-full flex justify-between">
-                  <p>Subtotal:</p>
-                  <p>$1430.99</p>
-                </div>
-                <div class="w-full flex justify-between">
-                  <p>Discount:</p>
-                  <p class="text-red-600">- $60.00</p>
-                </div>
-                <div class="w-full flex justify-between">
-                  <p>Tax:</p>
-                  <p class="text-green-500">+ $14.99</p>
-                </div>
+          <div class="bg-white py-3 px-2.5 flex flex-col gap-3.5 w-full border-[1px] border-gray-300 rounded-[3px]">
+            <div class=" border-b-[1px] border-gray-300 flex pb-5 flex-col gap-1.5 text-[#505050]">
+              <div class="w-full flex justify-between">
+                <p>Subtotal:</p>
+                <p>$1430.99</p>
               </div>
-              <div class="w-full font-bold flex justify-between">
-                <p>Total:</p>
-                <p>$1357.97</p>
+              <div class="w-full flex justify-between">
+                <p>Discount:</p>
+                <p class="text-red-600">- $60.00</p>
               </div>
-              <button class="check border-[1px] cursor-pointer check border-gray-300 py-2 bg-[#00B517] text-white px-2.5 font-semibold rounded-[5px] w-[70%] mx-auto">Checkout</button></div>
-
+              <div class="w-full flex justify-between">
+                <p>Tax:</p>
+                <p class="text-green-500">+ $14.99</p>
+              </div>
             </div>
+            <div class="w-full font-bold flex justify-between">
+              <p>Total:</p>
+              <p>$1357.97</p>
+            </div>
+            <button
+              class="check border-[1px] cursor-pointer check border-gray-300 py-2 bg-[#00B517] text-white px-2.5 font-semibold rounded-[5px] w-[70%] mx-auto">Checkout</button>
           </div>
         </div>
-
-
-        <div class="w-full">
-          <h2 class="font-semibold text-2xl">Saved for Later</h2>
-          <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1.5">
-            <div class="flex items-center flex-col justify-center border-[1px] border-gray-300 bg-white px-0.5 py-1 gap-2">
-              <img src="/assets/cloth/6.png" alt="" srcset="">
-              <p class="font-semibold">$10.00</p>
-              <p class="text-[13px] text-gray-600 text-center">Solid Backpack blue Colored</p>
-               <button class="flex gap-1.5 border-gray-300 border-[1px] text-blue-500 font-semibold px-1.5 py-1 rounded-[3px]">
-                 <img src="/assets/Icon/bluecart.svg" alt="">Move to Cart</button>
-            </div>
-            <div class="flex items-center flex-col justify-center border-[1px] border-gray-300 bg-white px-0.5 py-1 gap-2">
-              <img src="/assets/cloth/5.png" alt="" srcset="">
-              <p class="font-semibold">$10.00</p>
-              <p class="text-[13px] text-gray-600 text-center">Solid Backpack blue Colored</p>
-               <button class="flex gap-1.5 border-gray-300 border-[1px] text-blue-500 font-semibold px-1.5 py-1 rounded-[3px]">
-                 <img src="/assets/Icon/bluecart.svg" alt="">Move to Cart</button>
-            </div>
-            <div class="flex items-center flex-col justify-center border-[1px] border-gray-300 bg-white px-0.5 py-1 gap-2">
-              <img src="/assets/cloth/4.png" alt="" srcset="">
-              <p class="font-semibold">$10.00</p>
-              <p class="text-[13px] text-gray-600 text-center">Solid Backpack blue Colored</p>
-               <button class="flex gap-1.5 border-gray-300 border-[1px] text-blue-500 font-semibold px-1.5 py-1 rounded-[3px]">
-                 <img src="/assets/Icon/bluecart.svg" alt="">Move to Cart</button>
-            </div>
-            <div class="flex items-center flex-col justify-center border-[1px] border-gray-300 bg-white px-0.5 py-1 gap-2">
-              <img src="/assets/cloth/3.png" alt="" srcset="">
-              <p class="font-semibold">$10.00</p>
-              <p class="text-[13px] text-gray-600 text-center">Solid Backpack blue Colored</p>
-               <button class="flex gap-1.5 border-gray-300 border-[1px] text-blue-500 font-semibold px-1.5 py-1 rounded-[3px]">
-                 <img src="/assets/Icon/bluecart.svg" alt="">Move to Cart</button>
-            </div>
-            <div class="flex items-center flex-col justify-center border-[1px] border-gray-300 bg-white px-0.5 py-1 gap-2">
-              <img src="/assets/cloth/5.png" alt="" srcset="">
-              <p class="font-semibold">$10.00</p>
-              <p class="text-[13px] text-gray-600 text-center">Solid Backpack blue Colored</p>
-               <button class="flex gap-1.5 border-gray-300 border-[1px] text-blue-500 font-semibold px-1.5 py-1 rounded-[3px]">
-                 <img src="/assets/Icon/bluecart.svg" alt="">Move to Cart</button>
-            </div>
-            <div class="flex items-center flex-col justify-center border-[1px] border-gray-300 bg-white px-0.5 py-1 gap-2">
-              <img src="/assets/cloth/1.png" alt="" srcset="">
-              <p class="font-semibold">$10.00</p>
-              <p class="text-[13px] text-gray-600 text-center">Solid Backpack blue Colored</p>
-               <button class="flex gap-1.5 border-gray-300 border-[1px] text-blue-500 font-semibold px-1.5 py-1 rounded-[3px]">
-                 <img src="/assets/Icon/bluecart.svg" alt="">Move to Cart</button>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="bg-blue-700 h-[120px] w-full overflow-hidden rounded-[5px] flex justify-between px-8 items-center">
-          <div class="text-white">
-            <h3 class="font-semibold md:text-2xl text-[15px]">Super discount on more than 100USD</h3>
-            <h5 class="md:text-[17px] text-[10px] font-extralight">Super discount on more than 100 USD</h5>
-          </div>
-          <button class="bg-orange-400 cursor-pointer text-white text-[13px] w-[100px] h-[30px] md:w-auto md:h-auto font-semibold md:px-5 md:py-2 rounded-[3px]">Shop Now </button>
-        </div>
-
-
-
-        <!------------------------------------- Footer Secion  ---------------------------->
-        <footer class="w-full h-[300px]">
-         <div class="w-full h-[80%] flex bg-white">
-           <div
-             class="md:w-[30%] w-full h-full flex justify-center md:items-center flex-col"
-           >
-             <div
-               class="w-full h-[46px] flex items-center gap-1.5 md:justify-center"
-             >
-               <div
-                 class="bg-[#0D6EFD] w-[30px] h-[30px] rounded-[7px] flex justify-center items-center"
-               >
-                 <img src="/assets/Icon/logo.svg" alt="" srcset="" />
-               </div>
-               <a href="" class="text-[#8CB7F5] font-extrabold text-[17px]">
-                 SALMAN
-               </a>
-             </div>
-             <p class="text-[#505050] text-[12px] w-[70%]">
-               Best information about the company gies here but now lorem ipsum
-               is
-             </p>
-             <div
-               class="w-full h-[40px] flex md:justify-center items-center gap-2"
-             >
-               <img class="w-[20px]" src="/assets/Icon/Fill 183.svg" alt="" />
-               <img class="w-[20px]" src="/assets/Icon/Fill 184.svg" alt="" />
-               <img class="w-[20px]" src="/assets/Icon/Fill 209.svg" alt="" />
-               <img class="w-[20px]" src="/assets/Icon/Combined Shape.svg" alt="" />
-               <img class="w-[20px]" src="/assets/Icon/Combined Shape1.svg" alt="" />
-             </div>
-           </div>
-           <div class="h-full flex flex-grow items-center justify-between px-5">
-             <div class="w-[10%] hidden md:block">
-               <ul>
-                 <li class="font-semibold text-[16px]">About</li>
-                 <li class="text-[12px] text-[#8B96A5]">Contact</li>
-                 <li class="text-[12px] text-[#8B96A5]">Discounts</li>
-                 <li class="text-[12px] text-[#8B96A5]">Help</li>
-                 <li class="text-[12px] text-[#8B96A5]">Register</li>
-               </ul>
-             </div>
-             <div class="w-[10%] hidden md:block">
-               <ul>
-                 <li class="font-semibold text-[16px]">PartnerShip</li>
-                 <li class="text-[12px] text-[#8B96A5]">About us</li>
-                 <li class="text-[12px] text-[#8B96A5]">find us</li>
-                 <li class="text-[12px] text-[#8B96A5]">category</li>
-                 <li class="text-[12px] text-[#8B96A5]">Blog</li>
-               </ul>
-             </div>
-             <div class="w-[10%] hidden md:block">
-               <ul>
-                 <li class="font-semibold text-[16px]">information</li>
-                 <li class="text-[12px] text-[#8B96A5]">Help Center</li>
-                 <li class="text-[12px] text-[#8B96A5]">Money Refund</li>
-                 <li class="text-[12px] text-[#8B96A5]">Shipping</li>
-               </ul>
-             </div>
-             <div class="w-[10%] hidden md:block">
-               <ul>
-                 <li class="font-semibold text-[16px]">Users</li>
-                 <li class="text-[12px] text-[#8B96A5]">Login</li>
-                 <li class="text-[12px] text-[#8B96A5]">Register</li>
-                 <li class="text-[12px] text-[#8B96A5]">Setting</li>
-                 <li class="text-[12px] text-[#8B96A5]">My order</li>
-               </ul>
-             </div>
-             <div class="md:w-[10%] w-full">
-               <ul class="flex flex-col gap-2">
-                 <li class="font-semibold text-[16px]">Get App</li>
-                 <li class="text-[12px] text-[#8B96A5]">
-                   <img src="/assets/Misc/market-button.png" alt="" srcset="" />
-                 </li>
-                 <li class="text-[12px] text-[#8B96A5]">
-                   <img src="/assets/Misc/market-button.png" alt="" srcset="" />
-                 </li>
-               </ul>
-             </div>
-           </div>
-         </div>
-         <div
-           class="w-full h-[20%] flex justify-between items-center px-2 bg-[#EFF2F4]"
-         >
-           <p class="text-[#606060] text-[12px]">2023 commerce</p>
-           <div class="flex gap-1 items-center">
-             <img
-               class="h-[15px]"
-               src="/assets/flags/germany.png"
-               alt=""
-               srcset=""
-             />
-             <a class="text-[#606060] text-[12px]" href="">English</a>
-           </div>
-         </div>
-       </footer>
       </div>
     </div>
-    <script>
-      let bagButton = document.querySelector('.bagbutton')
-      let walletButton = document.querySelector('.walletbutton')
-      let wallet = document.querySelector('.wallet')
-      let shirtButton = document.querySelector('.shirtbutton')
-      let shirt = document.querySelector('.shirt')
-      let bag = document.querySelector('.bag')
-      bagButton.addEventListener('click',()=>{
-        bag.classList.add('hidden')
-      })
-      walletButton.addEventListener('click',()=>{
-        wallet.classList.add('hidden')
-      })
-      let message = document.querySelector('.successmessage')
-      let checkout = document.querySelector('.check')
-      let backButton = document.querySelector('.backButton')
-      checkout.addEventListener('click',()=>{
-        message.classList.remove('hidden')
-        message.classList.add('flex')
-      })
-      backButton.addEventListener('click',()=>{
-        message.classList.add('hidden')
-        message.classList.remove('flex')
-      })
-    </script>
-  </body>
+    <div class="w-full">
+      <h2 class="font-semibold text-2xl">Saved for Later</h2>
+      <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1.5">
+        <div class="flex items-center flex-col justify-center border-[1px] border-gray-300 bg-white px-0.5 py-1 gap-2">
+          <img src="/assets/cloth/6.png" alt="" srcset="">
+          <p class="font-semibold">$10.00</p>
+          <p class="text-[13px] text-gray-600 text-center">Solid Backpack blue Colored</p>
+          <button
+            class="flex gap-1.5 border-gray-300 border-[1px] text-blue-500 font-semibold px-1.5 py-1 rounded-[3px]">
+            <img src="/assets/Icon/bluecart.svg" alt="">Move to Cart</button>
+        </div>
+        <div class="flex items-center flex-col justify-center border-[1px] border-gray-300 bg-white px-0.5 py-1 gap-2">
+          <img src="/assets/cloth/5.png" alt="" srcset="">
+          <p class="font-semibold">$10.00</p>
+          <p class="text-[13px] text-gray-600 text-center">Solid Backpack blue Colored</p>
+          <button
+            class="flex gap-1.5 border-gray-300 border-[1px] text-blue-500 font-semibold px-1.5 py-1 rounded-[3px]">
+            <img src="/assets/Icon/bluecart.svg" alt="">Move to Cart</button>
+        </div>
+        <div class="flex items-center flex-col justify-center border-[1px] border-gray-300 bg-white px-0.5 py-1 gap-2">
+          <img src="/assets/cloth/4.png" alt="" srcset="">
+          <p class="font-semibold">$10.00</p>
+          <p class="text-[13px] text-gray-600 text-center">Solid Backpack blue Colored</p>
+          <button
+            class="flex gap-1.5 border-gray-300 border-[1px] text-blue-500 font-semibold px-1.5 py-1 rounded-[3px]">
+            <img src="/assets/Icon/bluecart.svg" alt="">Move to Cart</button>
+        </div>
+        <div class="flex items-center flex-col justify-center border-[1px] border-gray-300 bg-white px-0.5 py-1 gap-2">
+          <img src="/assets/cloth/3.png" alt="" srcset="">
+          <p class="font-semibold">$10.00</p>
+          <p class="text-[13px] text-gray-600 text-center">Solid Backpack blue Colored</p>
+          <button
+            class="flex gap-1.5 border-gray-300 border-[1px] text-blue-500 font-semibold px-1.5 py-1 rounded-[3px]">
+            <img src="/assets/Icon/bluecart.svg" alt="">Move to Cart</button>
+        </div>
+        <div class="flex items-center flex-col justify-center border-[1px] border-gray-300 bg-white px-0.5 py-1 gap-2">
+          <img src="/assets/cloth/5.png" alt="" srcset="">
+          <p class="font-semibold">$10.00</p>
+          <p class="text-[13px] text-gray-600 text-center">Solid Backpack blue Colored</p>
+          <button
+            class="flex gap-1.5 border-gray-300 border-[1px] text-blue-500 font-semibold px-1.5 py-1 rounded-[3px]">
+            <img src="/assets/Icon/bluecart.svg" alt="">Move to Cart</button>
+        </div>
+        <div class="flex items-center flex-col justify-center border-[1px] border-gray-300 bg-white px-0.5 py-1 gap-2">
+          <img src="/assets/cloth/1.png" alt="" srcset="">
+          <p class="font-semibold">$10.00</p>
+          <p class="text-[13px] text-gray-600 text-center">Solid Backpack blue Colored</p>
+          <button
+            class="flex gap-1.5 border-gray-300 border-[1px] text-blue-500 font-semibold px-1.5 py-1 rounded-[3px]">
+            <img src="/assets/Icon/bluecart.svg" alt="">Move to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="bg-blue-700 h-[120px] w-full overflow-hidden rounded-[5px] flex justify-between px-8 items-center">
+      <div class="text-white">
+        <h3 class="font-semibold md:text-2xl text-[15px]">Super discount on more than 100USD</h3>
+        <h5 class="md:text-[17px] text-[10px] font-extralight">Super discount on more than 100 USD</h5>
+      </div>
+      <button
+        class="bg-orange-400 cursor-pointer text-white text-[13px] w-[100px] h-[30px] md:w-auto md:h-auto font-semibold md:px-5 md:py-2 rounded-[3px]">Shop
+        Now </button>
+    </div>
+    <!------------------------------------- Footer Secion  ---------------------------->
+    <footer class="w-full h-[300px]">
+      <div class="w-full h-[80%] flex bg-white">
+        <div class="md:w-[30%] w-full h-full flex justify-center md:items-center flex-col">
+          <div class="w-full h-[46px] flex items-center gap-1.5 md:justify-center">
+            <div class="bg-[#0D6EFD] w-[30px] h-[30px] rounded-[7px] flex justify-center items-center">
+              <img src="/assets/Icon/logo.svg" alt="" srcset="" />
+            </div>
+            <a href="" class="text-[#8CB7F5] font-extrabold text-[17px]">
+              SALMAN
+            </a>
+          </div>
+          <p class="text-[#505050] text-[12px] w-[70%]">
+            Best information about the company gies here but now lorem ipsum
+            is
+          </p>
+          <div class="w-full h-[40px] flex md:justify-center items-center gap-2">
+            <img class="w-[20px]" src="/assets/Icon/Fill 183.svg" alt="" />
+            <img class="w-[20px]" src="/assets/Icon/Fill 184.svg" alt="" />
+            <img class="w-[20px]" src="/assets/Icon/Fill 209.svg" alt="" />
+            <img class="w-[20px]" src="/assets/Icon/Combined Shape.svg" alt="" />
+            <img class="w-[20px]" src="/assets/Icon/Combined Shape1.svg" alt="" />
+          </div>
+        </div>
+        <div class="h-full flex flex-grow items-center justify-between px-5">
+          <div class="w-[10%] hidden md:block">
+            <ul>
+              <li class="font-semibold text-[16px]">About</li>
+              <li class="text-[12px] text-[#8B96A5]">Contact</li>
+              <li class="text-[12px] text-[#8B96A5]">Discounts</li>
+              <li class="text-[12px] text-[#8B96A5]">Help</li>
+              <li class="text-[12px] text-[#8B96A5]">Register</li>
+            </ul>
+          </div>
+          <div class="w-[10%] hidden md:block">
+            <ul>
+              <li class="font-semibold text-[16px]">PartnerShip</li>
+              <li class="text-[12px] text-[#8B96A5]">About us</li>
+              <li class="text-[12px] text-[#8B96A5]">find us</li>
+              <li class="text-[12px] text-[#8B96A5]">category</li>
+              <li class="text-[12px] text-[#8B96A5]">Blog</li>
+            </ul>
+          </div>
+          <div class="w-[10%] hidden md:block">
+            <ul>
+              <li class="font-semibold text-[16px]">information</li>
+              <li class="text-[12px] text-[#8B96A5]">Help Center</li>
+              <li class="text-[12px] text-[#8B96A5]">Money Refund</li>
+              <li class="text-[12px] text-[#8B96A5]">Shipping</li>
+            </ul>
+          </div>
+          <div class="w-[10%] hidden md:block">
+            <ul>
+              <li class="font-semibold text-[16px]">Users</li>
+              <li class="text-[12px] text-[#8B96A5]">Login</li>
+              <li class="text-[12px] text-[#8B96A5]">Register</li>
+              <li class="text-[12px] text-[#8B96A5]">Setting</li>
+              <li class="text-[12px] text-[#8B96A5]">My order</li>
+            </ul>
+          </div>
+          <div class="md:w-[10%] w-full">
+            <ul class="flex flex-col gap-2">
+              <li class="font-semibold text-[16px]">Get App</li>
+              <li class="text-[12px] text-[#8B96A5]">
+                <img src="/assets/Misc/market-button.png" alt="" srcset="" />
+              </li>
+              <li class="text-[12px] text-[#8B96A5]">
+                <img src="/assets/Misc/market-button.png" alt="" srcset="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-[20%] flex justify-between items-center px-2 bg-[#EFF2F4]">
+        <p class="text-[#606060] text-[12px]">2023 commerce</p>
+        <div class="flex gap-1 items-center">
+          <img class="h-[15px]" src="/assets/flags/germany.png" alt="" srcset="" />
+          <a class="text-[#606060] text-[12px]" href="">English</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </div>
+  <script>
+    let bagButton = document.querySelector('.bagbutton')
+    let walletButton = document.querySelector('.walletbutton')
+    let wallet = document.querySelector('.wallet')
+    let shirtButton = document.querySelector('.shirtbutton')
+    let shirt = document.querySelector('.shirt')
+    let bag = document.querySelector('.bag')
+    bagButton.addEventListener('click', () => {
+      bag.classList.add('hidden')
+    })
+    walletButton.addEventListener('click', () => {
+      wallet.classList.add('hidden')
+    })
+    let message = document.querySelector('.successmessage')
+    let checkout = document.querySelector('.check')
+    let backButton = document.querySelector('.backButton')
+    checkout.addEventListener('click', () => {
+      message.classList.remove('hidden')
+      message.classList.add('flex')
+    })
+    backButton.addEventListener('click', () => {
+      message.classList.add('hidden')
+      message.classList.remove('flex')
+    })
+  </script>
+</body>
+
 </html>
